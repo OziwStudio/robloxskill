@@ -1,14 +1,8 @@
 # Roblox Skill Pluz License
 
-## Community Use
+## Open Source Use
 
-Roblox Skill Pluz is free to use for individuals, developers, open communities, and non-corporate groups.
-
-## Corporate Use
-
-Corporate users are encouraged to contact the Terla Community team and provide a donation to support future development.
-
-This is a request, not a legal demand. There is no legal claim, penalty, or enforcement action if a corporate user does not donate.
+Roblox Skill Pluz is free and open-source for everyone, including individuals, developers, communities, studios, organizations, and companies.
 
 ## Modification Rights
 
@@ -19,11 +13,11 @@ Everyone may modify, extend, fork, and improve this skill.
 - Keep the original credit.
 - Keep `Terla Community` credited.
 - Keep `The Owner (Oziwwwwww)` credited as the original author.
-- Send a copy of edited versions back to the Terla Community team.
+- Sharing edited versions back to Terla Community is appreciated as community collaboration.
 
 ## Ownership Note
 
-This license is written to keep the skill open for the community while preserving original credit and encouraging contribution back to Terla Community.
+This license is written to keep the skill free, open-source, community-friendly, and properly credited.
 
 ## MIT License
 MIT License

@@ -12,7 +12,7 @@ Core principle: `SUPER POWER TAPI HEMAT TOKEN`.
 - Author: The Owner (Oziwwwwww)
 - Skill name: `Roblox Skill Pluz`
 - Default engineer: `Basic`
-- Version: `1.3.0`
+- Version: `1.3.02`
 - Primary language: English
 - Secondary language: Indonesian
 
@@ -23,7 +23,7 @@ By default, the skill stays light, reads once, and keeps only the important rule
 ## Optional Support
 
 - `Management Project` for Rojo-style project workflow and tooling
-- `Framework` for Knit, ProfileStore, Fusion, and related architecture
+- `Framework` for Knit, ProfileStore, Fusion, React-Roblox, Matter ECS, Flamework, RbxUtil, Promise, Signal, components, and dependency injection
 
 ## Engineer Mode
 
@@ -64,26 +64,22 @@ By default, the skill stays light, reads once, and keeps only the important rule
 
 ## License
 
-This skill is free to use for individuals, developers, communities, and non-corporate groups.
-
-Corporate users are encouraged to contact the Terla Community team and provide a donation to support future development. This is a request, not a legal demand; there is no legal claim, penalty, or enforcement action if a corporate user does not donate.
+This skill is free and open-source for everyone, including individuals, developers, communities, studios, organizations, and companies.
 
 Everyone may modify, extend, fork, and improve this skill with these conditions:
 
 - Keep the original credit.
 - Keep `Terla Community` credited.
 - Keep `The Owner (Oziwwwwww)` credited as the original author.
-- Send a copy of edited versions back to the Terla Community team.
+- Sharing edited versions back to Terla Community is appreciated as community collaboration.
 
 See `LICENSE.md`.
 
 ## Catatan Indonesia
 
-`Roblox Skill Pluz` bebas dipakai untuk individu, developer, komunitas, dan grup non-corporate.
+`Roblox Skill Pluz` gratis dan open-source untuk semua orang, termasuk individu, developer, komunitas, studio, organisasi, dan perusahaan.
 
-Untuk corporate, diharapkan menghubungi team Terla Community dan memberi donasi sebagai dukungan pengembangan. Ini hanya harapan, bukan tuntutan hukum.
-
-Semua pihak boleh mengembangkan skill ini dengan syarat credit asli tidak dihapus dan salinan hasil edit dikirimkan kembali ke team Terla Community.
+Semua pihak boleh mengembangkan skill ini dengan syarat credit asli tidak dihapus. Membagikan hasil edit kembali ke Terla Community sangat dihargai sebagai kolaborasi komunitas.
 
 ## Versioning
 
@@ -97,4 +93,3 @@ Each time this skill is edited, increase the last part by one.
 - `UserId` is not hardcoded.
 - If a whitelist or permission list is needed, the user must provide the `UserId`.
 - From version `1.2.13`, new skill documentation should use English as the primary language.
-=======

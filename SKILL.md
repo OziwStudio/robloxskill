@@ -1,7 +1,7 @@
 ---
 name: roblox-skill-pluz-v1
 description: >
-  Roblox Skill Pluz v1.3.0 by Terla Community for Roblox Studio and Luau. A two-mode skill with
+  Roblox Skill Pluz v1.3.02 by Terla Community for Roblox Studio and Luau. A two-mode skill with
   Basic for light, token-efficient work and Deepin for deeper specialist analysis,
   principal-engineer depth, risk matrix routing, stronger review gates, modern Roblox guidance, animation/VFX coverage, community safety,
   complete game flow, bundled templates, and optional
@@ -171,9 +171,8 @@ These files are included in the root `Templates/` folder and are ready to use.
 
 ## License
 
-- Free for individuals, developers, communities, and non-corporate groups.
-- Corporate users are encouraged to contact Terla Community and donate, but there is no legal demand if they do not.
+- Free and open-source for everyone, including individuals, communities, studios, organizations, and companies.
 - Anyone may develop this skill further.
 - Do not remove original credit.
-- Send edited copies back to Terla Community.
+- Sharing edited copies back to Terla Community is appreciated as community collaboration.
 - See `LICENSE.md`.
