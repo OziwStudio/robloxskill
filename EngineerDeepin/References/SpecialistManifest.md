@@ -1,0 +1,39 @@
+# Specialist Manifest
+
+## Purpose
+
+- File ini membuktikan Deepin memiliki specialist terpisah.
+- Baca hanya saat user meminta daftar specialist atau saat audit kelengkapan skill.
+- Saat bekerja normal, baca hanya specialist yang relevan.
+
+## Specialist Files
+
+| Specialist | Path | Responsibility |
+|---|---|---|
+| Architecture | `EngineerDeepin/Specialists/Architecture.md` | boundaries, folders, ownership, scaling |
+| Luau | `EngineerDeepin/Specialists/Luau.md` | strict/nonstrict, modules, typing, lifecycle |
+| Networking | `EngineerDeepin/Specialists/Networking.md` | remotes, replication, prediction, rate limits |
+| Security | `EngineerDeepin/Specialists/Security.md` | exploit paths, authority, validation, permissions |
+| Data | `EngineerDeepin/Specialists/Data.md` | DataStore, ProfileStore, migration, receipts |
+| Performance | `EngineerDeepin/Specialists/Performance.md` | memory, CPU, loops, streaming, profiling |
+| Gameplay | `EngineerDeepin/Specialists/Gameplay.md` | combat, inventory, economy, progression |
+| UIUX | `EngineerDeepin/Specialists/UIUX.md` | UI state, input, responsiveness, accessibility |
+| Framework | `EngineerDeepin/Specialists/Framework.md` | Knit, ProfileStore, Fusion, Rojo only when enabled |
+| Reviewer | `EngineerDeepin/Specialists/Reviewer.md` | final audit, regression, production readiness |
+
+## Activation Rule
+
+- Use `Deepin: SpecialistName` for one specialist.
+- Use `!bugfix` for Luau + Reviewer + needed domain.
+- Use `!vulnfix` for Security + Networking + Data when relevant.
+- Use `!gamefull` for Architecture + Gameplay + Data + Networking + Security + Performance + UIUX + Reviewer.
+- Do not load Framework unless framework support is enabled.
+- Read `EngineerDeepin/References/ImplementationPatterns.md` when specialist output needs direct code examples.
+
+## Completeness Gate
+
+- All 10 specialist files must exist.
+- Each specialist file must have a clear scope.
+- Each specialist must route to references only when needed.
+- Deepin must not merge specialist detail into the main agent file.
+- Code examples must live in references, not duplicated across every specialist file.

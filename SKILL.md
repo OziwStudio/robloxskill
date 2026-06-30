@@ -1,0 +1,179 @@
+---
+name: roblox-skill-pluz-v1
+description: >
+  Roblox Skill Pluz v1.3.0 by Terla Community for Roblox Studio and Luau. A two-mode skill with
+  Basic for light, token-efficient work and Deepin for deeper specialist analysis,
+  principal-engineer depth, risk matrix routing, stronger review gates, modern Roblox guidance, animation/VFX coverage, community safety,
+  complete game flow, bundled templates, and optional
+  support for project management or framework work. Built for structured output,
+  practical generation, and SUPER POWER TAPI HEMAT TOKEN behavior. Use whenever the user mentions
+  Roblox, Luau, Studio, Roblox animation, Roblox VFX, or Roblox system work.
+---
+
+# Roblox Skill Pluz
+
+## First Read
+
+- Read this skill once, understand it carefully, then remember the important rules in context.
+- Hanya baca skill ini sekali, fahami dengan seksama, lalu ingat inti skill ini dalam context.
+- Jangan baca ulang skill ini di setiap turn; ingat hal yang perlu diingat dan benar-benar penting.
+- Do not reread every file every turn; read only the needed file when the user uses a command.
+- Utamakan penalaran skill yang powerful tapi hemat token.
+- On first activation, read:
+  - `EngineerBasic/Cores/AIModel.md`
+  - `EngineerBasic/Cores/Settings.md`
+  - `EngineerBasic/Cores/Rules.md`
+  - `EngineerBasic/Cores/Commands.md`
+  - `EngineerBasic/Cores/ChatOutput.md`
+  - `EngineerBasic/BasicEngineerAgent.md`
+- After the first read, output the exact ready message from `EngineerBasic/Cores/ChatOutput.md`.
+
+## Rule Priority
+
+1. Roblox security
+2. Roblox performance
+3. User request
+4. Command scope
+5. Architecture rules
+6. Naming rules
+7. Comment rules
+8. Output style
+
+Higher priority wins when rules conflict.
+
+## Core Files
+
+| File | Purpose |
+|---|---|
+| `EngineerBasic/Cores/AIModel.md` | BasicEngineer identity and response posture |
+| `EngineerBasic/Cores/Settings.md` | user-selectable support and memorize settings |
+| `EngineerBasic/Cores/Rules.md` | mandatory Roblox coding rules |
+| `EngineerBasic/Cores/Commands.md` | command list and file routing |
+| `EngineerBasic/Cores/ChatOutput.md` | message after reading the skill |
+| `EngineerBasic/BasicEngineerAgent.md` | default balanced engineer |
+
+## Basic References
+
+Read only when needed by task or command.
+
+| File | Read when |
+|---|---|
+| `EngineerBasic/References/Architecture.md` | system structure, file tree, folder rules |
+| `EngineerBasic/References/Networking.md` | remotes, rate limits, bridge patterns |
+| `EngineerBasic/References/Security.md` | validation, anti-exploit, permission checks |
+| `EngineerBasic/References/Data.md` | DataStore, session data, schema migration |
+| `EngineerBasic/References/Luau-patterns.md` | module patterns, cleanup, state machines |
+| `EngineerBasic/References/Systems.md` | gameplay system blueprints |
+| `EngineerBasic/References/UIUX.md` | Roblox UI and client UX |
+| `EngineerBasic/References/Performance.md` | optimization checklist |
+| `EngineerBasic/References/Gameplay.md` | gameplay-specific rules |
+
+## Deepin Mode
+
+- Default engineer mode is `Basic`.
+- Read Deepin only when user activates `!deepin`, `!read-deepin`, or `Engineer: Deepin`.
+- Deepin path:
+  - `EngineerDeepin/DeepinEngineerAgent.md`
+  - `EngineerDeepin/Cores/AIModel.md`
+  - `EngineerDeepin/Cores/Settings.md`
+  - `EngineerDeepin/Cores/Rules.md`
+  - `EngineerDeepin/Cores/Commands.md`
+  - `EngineerDeepin/Cores/ChatOutput.md`
+- Treat Deepin as highest-depth analysis mode.
+- Use Deepin for audits, large systems, risky architecture, `!bugfix`, and `!vulnfix`.
+- When context is full, reload `SKILL.md`, active engineer core, active support, and active reference only.
+
+## Deepin References
+
+Read only when Deepin is active and needed.
+
+| File | Read when |
+|---|---|
+| `EngineerDeepin/References/AdoptedRouter.md` | specialist routing and adopted strengths |
+| `EngineerDeepin/References/WorkflowPlaybooks.md` | debug, audit, publish, monetization workflows |
+| `EngineerDeepin/References/ProductionGates.md` | sharp edges and final gates |
+| `EngineerDeepin/References/CompleteGameLayer.md` | complete Roblox game routing and launch layer |
+| `EngineerDeepin/References/StudioModes.md` | Studio MCP/full/standard/offline behavior |
+| `EngineerDeepin/References/TemplateBridge.md` | bundled `Templates/` bridge |
+| `EngineerDeepin/References/TemplateCatalog.md` | ready genre template catalog |
+| `EngineerDeepin/References/SpecialistManifest.md` | 10 separate Deepin specialist manifest |
+| `EngineerDeepin/References/ImplementationPatterns.md` | concrete Luau, remote, data, security, gameplay code patterns |
+| `EngineerDeepin/References/TestingQA.md` | testing, QA, regression, smoke, and CI guidance |
+| `EngineerDeepin/References/GameDesignLiveOps.md` | FTUE, retention, social, difficulty, update strategy |
+| `EngineerDeepin/References/MonetizationAndEconomy.md` | purchase safety, pricing, economy, monetization ethics |
+| `EngineerDeepin/References/GenrePlaybooks.md` | genre-specific Roblox patterns |
+| `EngineerDeepin/References/ModernRoblox.md` | modern Roblox API confidence, Open Cloud, streaming, UI, avatar, LiveOps |
+| `EngineerDeepin/References/AnimationVFX.md` | animation, VFX, SFX, camera shake, particles, tweens, visual feedback |
+| `EngineerDeepin/References/MeshFidelityLOD.md` | RenderFidelity, CollisionFidelity, LevelOfDetail, mesh optimization |
+| `EngineerDeepin/References/CommunitySafety2026.md` | community safety, youth audience, chat, UGC, ads, policy-sensitive systems |
+| `EngineerDeepin/Specialists/*.md` | 10 Deepin specialist gates loaded by `Deepin: SpecialistName` |
+| `EngineerDeepin/References/Architecture.md` | deep architecture |
+| `EngineerDeepin/References/Networking.md` | deep networking |
+| `EngineerDeepin/References/Security.md` | deep security |
+| `EngineerDeepin/References/Data.md` | deep data |
+| `EngineerDeepin/References/Performance.md` | deep performance |
+| `EngineerDeepin/References/Gameplay.md` | deep gameplay |
+| `EngineerDeepin/References/UIUX.md` | deep UIUX |
+| `EngineerDeepin/References/Luau-patterns.md` | deep Luau |
+| `EngineerDeepin/References/Systems.md` | deep systems |
+
+## Optional Skill Support
+
+- Default support state is off.
+- Ask user to choose support when adding this skill.
+- Support choices: `None`, `Management Project`, `Framework`.
+- Read `Supports/ProjectManagement.md` only when user activates Project Management support.
+- Read `Supports/Framework.md` only when user activates Framework support.
+- Do not mention optional support in normal answers unless activated.
+
+## Memorize Setting
+
+- Default memorize mode is `Read once`.
+- Read core once, then remember important rules.
+- Use `Auto Call Skill When Context Full` only when user activates it.
+- When context was compacted, reload only core and active support files.
+
+## Engineer Mode
+
+- Default engineer mode is `Basic`.
+- `Basic` means one engineer, all specialties combined, light and balanced.
+- `Deepin` is separate and deeper.
+- Use `Engineer: Basic` by default when generating.
+- If the user asks for `Engineer: Deepin`, switch to the Deepin path.
+- If the user asks `Deepin: SpecialistName`, load that specialist focus.
+- Deepin specialists: `Luau`, `Architecture`, `Networking`, `Security`, `Performance`, `Data`, `Gameplay`, `UIUX`, `Framework`, `Reviewer`.
+- If the user asks `!modernapi`, read `EngineerDeepin/References/ModernRoblox.md` and provide stable fallback.
+- If the user asks `!gamefull`, read complete game references and bundled `Templates/` files.
+- If the user asks `!template`, read `EngineerDeepin/References/TemplateBridge.md` and one matching bundled template.
+
+## Bundled Templates
+
+These files are included in the root `Templates/` folder and are ready to use.
+
+| Template | Path |
+|---|---|
+| Scaffold | `Templates/game-scaffold.md` |
+| Simulator | `Templates/genre-simulator.md` |
+| Tycoon | `Templates/genre-tycoon.md` |
+| Obby | `Templates/genre-obby.md` |
+| RPG | `Templates/genre-rpg.md` |
+| Horror | `Templates/genre-horror.md` |
+| Battle Royale | `Templates/genre-battle-royale.md` |
+
+## Working Rule
+
+- Use rules, not long explanations.
+- English is the primary skill language from this version forward.
+- Prefer one exact term over synonyms.
+- Avoid duplicate global rules.
+- Generate complete code only when command or user intent asks for code.
+- Keep the operating principle: `SUPER POWER TAPI HEMAT TOKEN`.
+
+## License
+
+- Free for individuals, developers, communities, and non-corporate groups.
+- Corporate users are encouraged to contact Terla Community and donate, but there is no legal demand if they do not.
+- Anyone may develop this skill further.
+- Do not remove original credit.
+- Send edited copies back to Terla Community.
+- See `LICENSE.md`.
