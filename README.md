@@ -12,7 +12,7 @@ Core principle: `SUPER POWER TAPI HEMAT TOKEN`.
 - Author: The Owner (Oziwwwwww)
 - Skill name: `Roblox Skill Pluz`
 - Default engineer: `Basic`
-- Version: `1.4.01`
+- Version: `1.4.02`
 - Primary language: English
 - Secondary language: Indonesian
 

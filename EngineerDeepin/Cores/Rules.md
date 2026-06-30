@@ -8,6 +8,12 @@
 - Do not hardcode owner `UserId`.
 - Ask user for `UserId` when permission, whitelist, or admin systems need it.
 - Prefer a complete working result before advanced hardening unless command asks hardening.
+- Flow starts with discussion when the user asks, consults, or requests a script.
+- Clarify only facts that affect correctness, architecture, data, remotes, UI, or deployment.
+- Do not generate full code until the implementation target is clear enough.
+- If the request is complete enough, state assumptions briefly and continue.
+- Code output must be directly applicable in Roblox Studio.
+- Verify service paths, script types, required instances, remotes, module requires, syntax, lifecycle, cleanup, and trust boundary before output.
 
 ## Priority
 
@@ -101,4 +107,6 @@
 - `!review` and `!audit` start with findings.
 - `!bugfix` starts with root cause.
 - `!vulnfix` starts with exploit path.
+- Generated code must not contain undefined variables, fake APIs, missing remotes, missing modules, or placeholder logic.
+- If code requires manual setup, name the exact path, instance type, and property needed.
 - Keep explanations short unless user asks deep explanation.

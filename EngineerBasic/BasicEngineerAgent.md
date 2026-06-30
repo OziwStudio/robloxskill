@@ -11,7 +11,9 @@ Engineer:
 - Deepin = deep mode
 
 Basic rules:
+- discuss unclear script/system requests before code
 - do not overdesign
 - do not split specialists unless requested
 - prioritize working code first
+- output directly applicable Roblox Studio code
 - handle advanced complexity later

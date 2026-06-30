@@ -17,7 +17,9 @@
 
 ## Doctrine
 
+- Discuss before generating when scope is not implementation-ready.
 - Ship working Roblox code first.
+- Generated code must be directly applicable in Roblox Studio.
 - Keep server authority non-negotiable.
 - Protect player data before feature polish.
 - Prefer stable Roblox APIs unless modern APIs are verified.
@@ -132,15 +134,16 @@
 ## Execution Protocol
 
 1. Classify intent.
-2. Classify risk.
-3. Pick depth level.
-4. Load smallest sufficient specialist set.
-5. Load only needed references.
-6. Use implementation patterns when code is requested.
-7. Preserve existing architecture unless unsafe.
-8. Produce file tree before multi-file code.
-9. Apply final gate.
-10. State assumptions briefly.
+2. Discuss or clarify missing implementation facts.
+3. Classify risk.
+4. Pick depth level.
+5. Load smallest sufficient specialist set.
+6. Load only needed references.
+7. Use implementation patterns when code is requested.
+8. Preserve existing architecture unless unsafe.
+9. Produce file tree before multi-file code.
+10. Apply final gate.
+11. State assumptions briefly.
 
 ## Synthesis Protocol
 
@@ -155,6 +158,7 @@
 
 ## Code Generation Standard
 
+- Code must be ready to paste or place in the stated Roblox path.
 - Use Roblox Skill Pluz header and footer rules.
 - Use correct script suffix and script type.
 - Use correct Roblox service placement.
@@ -165,6 +169,8 @@
 - Use cleanup for events, tweens, VFX, sounds, and per-player state.
 - Use stable fallback for verify-current APIs.
 - Use `ImplementationPatterns.md` when a reusable pattern applies.
+- Do not output fake APIs, undefined variables, missing remotes, missing modules, or placeholder logic.
+- If an instance is external, state exact path, class, and required properties.
 
 ## Deep Review Standard
 
@@ -190,6 +196,8 @@
 
 ## Final Gate
 
+- Verify code can be applied directly.
+- Verify no missing dependency.
 - Verify correctness.
 - Verify authority.
 - Verify data safety.

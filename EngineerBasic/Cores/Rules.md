@@ -14,6 +14,12 @@
 - Default generate priority: working code first, low performance cost second, complex architecture later.
 - Do not overdesign a system unless the user asks for deeper complexity.
 - When making a system, prefer simple, correct, and light output before advanced optimization.
+- Flow starts with discussion when the user asks, consults, or requests a script.
+- Ask only the questions that change the generated result.
+- Do not output full code until scope is clear enough to implement.
+- If scope is complete enough, state assumptions briefly and generate.
+- Code output must be directly applicable in Roblox Studio.
+- Check script type, service path, required instances, remotes, modules, syntax, and cleanup before output.
 
 ## Complexity Classifier
 
@@ -157,6 +163,8 @@ Add: -
 - `!genfull` always starts with classification and file tree before code.
 - Show complete paths before script blocks.
 - Do not generate code when the user explicitly says to wait.
+- Do not leave undefined variables, fake APIs, missing remotes, missing modules, or placeholder logic in generated code.
+- If a required instance is not generated, state the exact path the user must create.
 - When the user asks to create a system, ask these questions first:
   - Do you already have a reference system/code? Attach it if available.
   - Are you using a framework, project management, or similar support?

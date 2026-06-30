@@ -39,5 +39,9 @@ Specialist:
 - Deepin: Framework
 - Deepin: Reviewer
 
+Flow:
+- Discuss unclear requests first.
+- Generated code must be directly applicable in Roblox Studio.
+
 Deepin reads files as needed, not every file on every turn.
 ```
