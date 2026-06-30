@@ -158,8 +158,8 @@ Add: -
 - Show complete paths before script blocks.
 - Do not generate code when the user explicitly says to wait.
 - When the user asks to create a system, ask these questions first:
-  - Apakah sudah ada sistem/code sebagai referensi? jika ada lampirkan.
-  - Apakah pakai Framework, management project, dan sebagainya?
-  - Seberapa dalam kompleksitas yang diinginkan: Cetek, Sedang, Dalam?
-  - Kedalaman generate: separated atau all-in.
-  - Tipe generate: package atau copas.
+  - Do you already have a reference system/code? Attach it if available.
+  - Are you using a framework, project management, or similar support?
+  - What complexity depth do you want: Shallow, Medium, or Deep?
+  - Generation depth: separated or all-in.
+  - Generation type: package or copy-paste.

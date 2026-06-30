@@ -75,3 +75,42 @@
 - Flag `Verify-Current` APIs.
 - Flag missing QA gates.
 - Summary stays short.
+
+## Practical Principles
+
+- Review behavior, not just style.
+- A working demo can still be unsafe.
+- Severity must explain user impact.
+- Every critical finding needs a concrete fix.
+- Missing tests are risk, not decoration.
+
+## Finding Format
+
+```text
+Severity: Critical
+Area: Security
+Finding:
+Impact:
+Evidence:
+Fix:
+Regression Test:
+```
+
+## Readiness Rubric
+
+```text
+Not Ready:
+  exploitable, data-loss risk, or runtime blocker
+Partially Ready:
+  works but lacks hardening or tests
+Production Ready:
+  safe authority, safe data, bounded performance, basic QA
+Enterprise Ready:
+  scalable architecture, migration path, observability, live-service gates
+```
+
+## Specialist Habit
+
+- Lead with the highest-risk issue.
+- Do not approve vague architecture.
+- Always check security, data, cleanup, performance, and user flow.

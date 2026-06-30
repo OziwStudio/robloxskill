@@ -2,9 +2,9 @@
 
 ## Purpose
 
-- Pakai untuk audit visual, MeshPart, map besar, mobile performance, asset import, dan world optimization.
-- Fokus pada `RenderFidelity`, `CollisionFidelity`, dan `LevelOfDetail`.
-- Baca bersama `Performance.md` saat bottleneck ada di rendering, physics, part count, mesh, atau mobile.
+- Use for visual audits, MeshPart, large maps, mobile performance, asset import, and world optimization.
+- Focus on `RenderFidelity`, `CollisionFidelity`, and `LevelOfDetail`.
+- Read with `Performance.md` when the bottleneck is rendering, physics, part count, mesh, or mobile.
 
 ## Priority
 
@@ -16,30 +16,30 @@
 
 ## CollisionFidelity
 
-- `CollisionFidelity` mengontrol bentuk collision MeshPart.
-- Jangan pakai collision presisi untuk dekorasi.
-- Dekorasi kecil pakai `CanCollide = false`.
-- Objek dekoratif besar pakai `Box` atau `Hull`.
-- Pakai collision presisi hanya untuk gameplay yang benar-benar butuh bentuk akurat.
-- Hindari `PreciseConvexDecomposition` pada mesh rumit yang sering disentuh pemain.
-- Pisahkan visual mesh dan invisible collision part jika bentuk collision butuh kontrol.
+- `CollisionFidelity` controls the collision shape of a MeshPart.
+- Do not use precise collision for decoration.
+- Small decoration should use `CanCollide = false`.
+- Large decorative objects should use `Box` or `Hull`.
+- Use precise collision only for gameplay that truly needs accurate shape.
+- Avoid `PreciseConvexDecomposition` on complex meshes frequently touched by players.
+- Separate the visual mesh and invisible collision parts when collision shape needs control.
 
 ## RenderFidelity
 
-- `RenderFidelity` mengontrol kualitas visual MeshPart.
-- Mesh high-poly pakai `Automatic` atau `Performance` bila kualitas jauh tidak penting.
-- Pakai kualitas tinggi hanya untuk asset dekat kamera atau focal object.
-- Jangan mengandalkan gaya low-poly sebagai bukti performa ringan.
-- Ukur jumlah triangle, material, texture size, transparency, dan shadow.
+- `RenderFidelity` controls MeshPart visual quality.
+- High-poly meshes should use `Automatic` or `Performance` when far quality is not important.
+- Use high quality only for assets near the camera or focal objects.
+- Do not treat low-poly style as proof of lightweight performance.
+- Measure triangle count, materials, texture size, transparency, and shadows.
 
 ## LevelOfDetail
 
-- LOD mengurangi detail objek berdasarkan jarak, kepadatan, atau device.
-- Untuk asset statis, utamakan `RenderFidelity` dan desain mesh yang ringan.
-- Untuk NPC, pet, VFX, dan dekor dinamis, buat LOD manual.
-- LOD manual boleh memakai mode `Full`, `Simple`, `Billboard`, `Hidden`.
-- Mobile harus punya jarak LOD lebih agresif.
-- Jangan membuat LOD mengubah gameplay outcome.
+- LOD reduces object detail based on distance, density, or device.
+- For static assets, prioritize `RenderFidelity` and lightweight mesh design.
+- For NPCs, pets, VFX, and dynamic decoration, create manual LOD.
+- Manual LOD may use `Full`, `Simple`, `Billboard`, or `Hidden` modes.
+- Mobile should use more aggressive LOD distances.
+- Do not let LOD change gameplay outcomes.
 
 ## Suggested Defaults
 

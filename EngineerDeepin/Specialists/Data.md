@@ -63,3 +63,42 @@
 - For receipt: define idempotency.
 - For audit: lead with data-loss risk.
 - Include schema version, reconciliation, save lifecycle, and failure behavior.
+
+## Practical Principles
+
+- Data changes should pass through one server-owned data service.
+- Every profile field needs a default and migration story.
+- Save frequency should be dirty-state based, not every event.
+- Receipts need an idempotency key before granting value.
+- Never store Instances, Vector3 userdata, or non-serializable objects directly.
+
+## Schema Contract Example
+
+```luau
+export type PlayerData = {
+	DataVersion: number,
+	Coins: number,
+	EquippedItemId: string?,
+	Inventory: { [string]: number },
+	Receipts: { [string]: boolean },
+}
+```
+
+## Mutation Rule Example
+
+```luau
+local function addCoins(data: PlayerData, amount: number): boolean
+	if amount <= 0 or amount ~= amount then
+		return false
+	end
+
+	data.Coins += math.floor(amount)
+	return true
+end
+```
+
+## Specialist Habit
+
+- Always define load, mutate, save, release.
+- Always say what happens if load fails.
+- Always separate persistent data from session-only cache.

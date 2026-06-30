@@ -2,8 +2,17 @@
 
 ## UI Rules
 
+- Before generating UI, ask:
+  - `Do you already have a UI, or should I generate it by script?`
+  - `Should the UI generator script be merged with the logic, or separated from logic/UX?`
+- If user already has UI, integrate with existing hierarchy.
+- If user wants generated UI, create script-generated UI.
+- If user wants separate UI generator, keep UI builder separate from logic/controller.
+- If user wants merged logic, keep UI section clearly separated inside the same script.
 - Client creates and controls UI.
 - Server never trusts UI state.
+- Name script-bound UI specifically, not `TextLabel`, `Frame`, or `ImageLabel`.
+- Use names like `TLbl_PlayerName`, `FramePanel`, `IBtnIcon`, or `ListItems`.
 - Use scale-based sizing for mobile.
 - Use small reusable builders.
 - Clean UI on destroy.
@@ -35,7 +44,7 @@ local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local function createRoot(): ScreenGui
-    -- BUAT ROOT
+    -- CREATE ROOT
     local gui = Instance.new("ScreenGui")
     gui.Name = "ShopSystem_v1"
     gui.ResetOnSpawn = false
@@ -45,7 +54,7 @@ local function createRoot(): ScreenGui
 end
 
 local function destroyRoot(gui: ScreenGui?)
-    -- HAPUS UI
+    -- DESTROY UI
     if gui then
         gui:Destroy()
     end

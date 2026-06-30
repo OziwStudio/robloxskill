@@ -2,8 +2,8 @@
 
 ## Purpose
 
-- Pakai untuk exploit prevention, remote validation, economy, inventory, trade, combat, admin, and purchase safety.
-- Pakai `ImplementationPatterns.md` untuk validator, rate limiter, remote handler, dan authority skeleton.
+- Use for exploit prevention, remote validation, economy, inventory, trade, combat, admin, and purchase safety.
+- Use `ImplementationPatterns.md` for validator, rate limiter, remote handler, and authority skeleton.
 
 ## Trust Model
 

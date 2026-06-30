@@ -2,16 +2,16 @@
 
 ## Purpose
 
-- File ini membuktikan template genre siap pakai.
-- Baca hanya saat `!template`, `!gamefull`, `!newgame`, atau genre game diminta.
-- Jangan paste isi template penuh ke chat.
-- Pakai template sebagai sumber arsitektur, sistem, data, UI, monetization, dan launch plan.
+- This file proves ready-to-use genre templates exist.
+- Read only when `!template`, `!gamefull`, `!newgame`, or a game genre is requested.
+- Do not paste full template content into chat.
+- Use templates as the source for architecture, systems, data, UI, monetization, and launch plans.
 
 ## Ready Templates
 
 | Template | Path | Use |
 |---|---|---|
-| Scaffold | `Templates/game-scaffold.md` | struktur game lengkap |
+| Scaffold | `Templates/game-scaffold.md` | complete game structure |
 | Simulator | `Templates/genre-simulator.md` | loop click, upgrade, pet, rebirth |
 | Tycoon | `Templates/genre-tycoon.md` | plot, dropper, conveyor, cash, unlock |
 | Obby | `Templates/genre-obby.md` | checkpoint, stage, timer, reward |

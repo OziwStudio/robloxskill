@@ -63,3 +63,48 @@
 - Define data third.
 - Keep genre-specific logic modular.
 - Include first playable skeleton before extra complexity.
+
+## Practical Principles
+
+- First playable loop beats perfect architecture.
+- Reward must follow action quickly.
+- Server validates gameplay result.
+- Client owns feel, animation, VFX, and local prediction only.
+- Economy needs source, sink, pacing, and abuse prevention.
+
+## Loop Contract Example
+
+```text
+Action: player defeats enemy
+Server Validation: alive, range, cooldown, target valid
+Reward: XP + possible item drop
+Sink: repair, crafting, upgrade cost
+Saved: XP, level, inventory ids
+Client Feedback: hit marker, sound, VFX
+Abuse Case: fake hit remote
+```
+
+## Combat Skeleton
+
+```luau
+local function canDamage(player: Player, target: Model): boolean
+	local character = player.Character
+	if not character then
+		return false
+	end
+
+	local root = character:FindFirstChild("HumanoidRootPart")
+	local targetRoot = target:FindFirstChild("HumanoidRootPart")
+	if not root or not targetRoot then
+		return false
+	end
+
+	return (root.Position - targetRoot.Position).Magnitude <= 12
+end
+```
+
+## Specialist Habit
+
+- Define action, reward, sink, save, and abuse case before code.
+- Keep visual feedback separate from server outcome.
+- Make the first 60 seconds understandable.

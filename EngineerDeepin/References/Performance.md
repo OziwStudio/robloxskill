@@ -2,7 +2,7 @@
 
 ## Purpose
 
-- Pakai untuk CPU, memory, rendering, UI, VFX, networking, mobile, and scale audits.
+- Use for CPU, memory, rendering, UI, VFX, networking, mobile, and scale audits.
 
 ## Priority
 

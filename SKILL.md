@@ -1,12 +1,12 @@
 ---
-name: roblox-skill-pluz-v1
+name: roblox-skill-pluz
 description: >
-  Roblox Skill Pluz v1.3.02 by Terla Community for Roblox Studio and Luau. A two-mode skill with
+  Roblox Skill Pluz v1.3.08 by Terla Community for Roblox Studio and Luau. A two-mode skill with
   Basic for light, token-efficient work and Deepin for deeper specialist analysis,
-  principal-engineer depth, risk matrix routing, stronger review gates, modern Roblox guidance, animation/VFX coverage, community safety,
+  principal-engineer depth, risk matrix routing, stronger review gates, art-directed UI/UX, modern Roblox guidance, animation/VFX coverage, community safety,
   complete game flow, bundled templates, and optional
   support for project management or framework work. Built for structured output,
-  practical generation, and SUPER POWER TAPI HEMAT TOKEN behavior. Use whenever the user mentions
+  practical generation, and powerful token-efficient behavior. Use whenever the user mentions
   Roblox, Luau, Studio, Roblox animation, Roblox VFX, or Roblox system work.
 ---
 
@@ -15,10 +15,10 @@ description: >
 ## First Read
 
 - Read this skill once, understand it carefully, then remember the important rules in context.
-- Hanya baca skill ini sekali, fahami dengan seksama, lalu ingat inti skill ini dalam context.
-- Jangan baca ulang skill ini di setiap turn; ingat hal yang perlu diingat dan benar-benar penting.
+- Read this skill only once, understand it carefully, then remember the important core in context.
+- Do not reread this skill every turn; remember only what is important and necessary.
 - Do not reread every file every turn; read only the needed file when the user uses a command.
-- Utamakan penalaran skill yang powerful tapi hemat token.
+- Prioritize powerful reasoning with efficient token use.
 - On first activation, read:
   - `EngineerBasic/Cores/AIModel.md`
   - `EngineerBasic/Cores/Settings.md`
@@ -58,15 +58,9 @@ Read only when needed by task or command.
 
 | File | Read when |
 |---|---|
-| `EngineerBasic/References/Architecture.md` | system structure, file tree, folder rules |
-| `EngineerBasic/References/Networking.md` | remotes, rate limits, bridge patterns |
-| `EngineerBasic/References/Security.md` | validation, anti-exploit, permission checks |
-| `EngineerBasic/References/Data.md` | DataStore, session data, schema migration |
-| `EngineerBasic/References/Luau-patterns.md` | module patterns, cleanup, state machines |
-| `EngineerBasic/References/Systems.md` | gameplay system blueprints |
+| `EngineerBasic/References/Architecture.md` | architecture, security, systems, data, Luau patterns |
 | `EngineerBasic/References/UIUX.md` | Roblox UI and client UX |
-| `EngineerBasic/References/Performance.md` | optimization checklist |
-| `EngineerBasic/References/Gameplay.md` | gameplay-specific rules |
+| `EngineerBasic/References/Performance.md` | performance, networking, gameplay |
 
 ## Deepin Mode
 
@@ -167,7 +161,7 @@ These files are included in the root `Templates/` folder and are ready to use.
 - Prefer one exact term over synonyms.
 - Avoid duplicate global rules.
 - Generate complete code only when command or user intent asks for code.
-- Keep the operating principle: `SUPER POWER TAPI HEMAT TOKEN`.
+- Keep the operating principle: `POWERFUL BUT TOKEN-EFFICIENT`.
 
 ## License
 

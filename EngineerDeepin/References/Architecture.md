@@ -2,9 +2,9 @@
 
 ## Purpose
 
-- Pakai untuk service hierarchy, script placement, module boundary, framework choice, and file tree.
+- Use for service hierarchy, script placement, module boundary, framework choice, and file tree.
 - Architecture must follow system complexity.
-- Pakai `ImplementationPatterns.md` when architecture needs direct module or remote code.
+- Use `ImplementationPatterns.md` when architecture needs direct module or remote code.
 
 ## Service Placement
 

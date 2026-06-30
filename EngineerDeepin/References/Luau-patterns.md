@@ -2,8 +2,8 @@
 
 ## Purpose
 
-- Pakai untuk Luau quality, module patterns, lifecycle, cleanup, typing, and testability.
-- Pakai `ImplementationPatterns.md` untuk module skeleton, cleanup container, validator, dan state machine.
+- Use for Luau quality, module patterns, lifecycle, cleanup, typing, and testability.
+- Use `ImplementationPatterns.md` for module skeleton, cleanup container, validator, and state machine.
 
 ## Module Shape
 

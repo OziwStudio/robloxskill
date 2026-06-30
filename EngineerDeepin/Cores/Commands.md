@@ -111,11 +111,11 @@
 
 ## Generate Questions
 
-- Ask: `Apakah sudah ada sistem/code sebagai referensi? jika ada lampirkan!`
-- Ask: `Apakah pakai Framework, management project dsb?`
-- Ask: `Seberapa dalam kompleksitas yang diinginkan? Cetek, Sedang, Dalam`
-- Ask: `Kedalaman generate: separated / all-in?`
-- Ask: `Tipe generate: package / copas?`
+- Ask: `Do you already have a reference system/code? Attach it if available.`
+- Ask: `Are you using a framework, project management, or similar support?`
+- Ask: `What complexity depth do you want: Shallow, Medium, or Deep?`
+- Ask: `Generation depth: separated or all-in?`
+- Ask: `Generation type: package or copy-paste?`
 
 ## Keyword Rules
 

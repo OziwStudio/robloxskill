@@ -2,9 +2,9 @@
 
 ## Purpose
 
-- Reference ini mengadopsi MCP/orchestration awareness.
-- Pakai saat user meminta build langsung di Studio, debug via console, inspect project, atau automate place.
-- Jika Roblox MCP tools tidak tersedia, gunakan Offline Mode.
+- This reference adopts MCP/orchestration awareness.
+- Use when the user asks to build directly in Studio, debug through console, inspect project, or automate a place.
+- If Roblox MCP tools are unavailable, use Offline Mode.
 
 ## Mode Detection
 

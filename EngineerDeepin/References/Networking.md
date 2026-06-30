@@ -2,7 +2,7 @@
 
 ## Purpose
 
-- Pakai untuk remotes, multiplayer, teams, lobbies, rounds, matchmaking, TeleportService, MessagingService, and cross-server systems.
+- Use for remotes, multiplayer, teams, lobbies, rounds, matchmaking, TeleportService, MessagingService, and cross-server systems.
 
 ## Remote Rules
 

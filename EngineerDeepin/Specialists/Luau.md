@@ -58,3 +58,46 @@
 - For review: report maintainability risk.
 - For bugfix: isolate root cause before rewriting.
 - Include a concrete module skeleton when user asks for generation.
+
+## Practical Principles
+
+- Keep module top-level cheap and non-yielding.
+- Separate constructor, setup, runtime, and cleanup.
+- Return explicit success/failure for recoverable operations.
+- Use type aliases for public contracts.
+- Use runtime guards at boundaries even with `--!strict`.
+
+## Concrete Pattern
+
+```luau
+--!strict
+
+export type Result<T> = {
+	Ok: boolean,
+	Value: T?,
+	Error: string?,
+}
+
+local function ok<T>(value: T): Result<T>
+	return { Ok = true, Value = value, Error = nil }
+end
+
+local function fail<T>(message: string): Result<T>
+	return { Ok = false, Value = nil, Error = message }
+end
+
+local function findChild(parent: Instance, name: string): Result<Instance>
+	local child = parent:FindFirstChild(name)
+	if not child then
+		return fail("missing_child")
+	end
+
+	return ok(child)
+end
+```
+
+## Specialist Habit
+
+- If code touches Roblox services, name the service boundary.
+- If code stores state, name the owner and cleanup path.
+- If code yields, explain why the yield is safe.

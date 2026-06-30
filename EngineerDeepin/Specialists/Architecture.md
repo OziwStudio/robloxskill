@@ -58,3 +58,39 @@
 - State architecture class.
 - Show file tree before code.
 - Mention migration risk before breaking changes.
+
+## Practical Principles
+
+- Architecture starts from ownership, not folders.
+- A system should have one server owner for valuable state.
+- Shared modules should not mutate server-only state.
+- Client controllers should send intent and render state.
+- Complex folder trees are justified only by real domain boundaries.
+
+## Boundary Contract Example
+
+```text
+Domain: Inventory
+Server Owner: InventoryService
+Persistent Data: item ids, equipped slot
+Client Owner: InventoryController
+Shared Contract: item config, payload types
+Remotes: Inventory_Equip_RE, Inventory_Sync_RE
+Forbidden: client creating owned item
+```
+
+## Dependency Rule Example
+
+```text
+Allowed:
+  ShopService -> InventoryService
+  ShopService -> CurrencyService
+Not Allowed:
+  InventoryService -> ShopService -> InventoryService
+```
+
+## Specialist Habit
+
+- Draw ownership before files.
+- Prefer one-way dependencies.
+- If two services need each other, extract a shared coordinator or pure helper.

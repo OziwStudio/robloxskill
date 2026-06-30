@@ -2,9 +2,9 @@
 
 ## Purpose
 
-- Pakai saat Deepin perlu menghasilkan code nyata, bukan hanya checklist.
-- Baca bersama specialist yang aktif.
-- Copy pattern, lalu adaptasi nama sistem, folder, remote, schema, dan comment language.
+- Use when Deepin needs to generate real code, not only checklists.
+- Read with the active specialist.
+- Copy the pattern, then adapt system name, folders, remotes, schema, and comment language.
 
 ## Module Shape
 

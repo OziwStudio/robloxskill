@@ -60,3 +60,41 @@
 - Identify bottleneck class.
 - Prioritize measurable fixes.
 - Preserve readability unless performance requires change.
+
+## Practical Principles
+
+- First classify bottleneck: CPU, memory, rendering, physics, networking, UI, or data.
+- Reduce work before micro-optimizing code.
+- Event-driven beats polling when state changes are discrete.
+- Pool only when churn is proven or obviously frequent.
+- Mobile performance is a release gate.
+
+## Bottleneck Contract Example
+
+```text
+Symptom: FPS drops near pet area
+Class: rendering + VFX + replication
+Likely Cause: too many animated pets and particles
+Quick Fix: client LOD + particle budget
+Deep Fix: pet pooling + replication interest
+Validation: compare low-end mobile before/after
+```
+
+## Cleanup Example
+
+```luau
+local connections: { RBXScriptConnection } = {}
+
+local function cleanup()
+	for _, connection in connections do
+		connection:Disconnect()
+	end
+	table.clear(connections)
+end
+```
+
+## Specialist Habit
+
+- Name the bottleneck class before fixes.
+- Prefer bounded budgets: max parts, max particles, max remote rate.
+- Never optimize by moving authority to the client.

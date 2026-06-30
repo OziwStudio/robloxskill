@@ -2,10 +2,10 @@
 
 ## Purpose
 
-- Reference ini membuat Deepin lengkap untuk pembuatan game Roblox penuh.
-- Pakai saat user meminta game baru, complete system, game design, genre, publish, live-service, atau audit menyeluruh.
-- Load file ini sebelum memilih workflow teknis panjang.
-- Tetap gunakan file lain hanya bila dibutuhkan.
+- This reference makes Deepin complete for full Roblox game creation.
+- Use when the user asks for a new game, complete system, game design, genre, publish, live-service, or broad audit.
+- Load this file before choosing a long technical workflow.
+- Still use other files only when needed.
 
 ## Complete Game Stack
 

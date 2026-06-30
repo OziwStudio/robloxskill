@@ -54,3 +54,40 @@
 - Recommend framework only when useful.
 - Explain tradeoff briefly.
 - Prefer project pattern if one already exists.
+
+## Practical Principles
+
+- Framework is a cost until it removes repeated complexity.
+- Existing project framework wins unless it is unsafe or broken.
+- Services own rules; controllers own presentation.
+- Framework lifecycle must not hide data or remote validation.
+- A module-only fallback should exist for small systems.
+
+## Choice Contract Example
+
+```text
+Framework Choice: Knit
+Reason: multiple server services and client controllers need shared lifecycle
+Fallback: plain ModuleScripts with Init/Start
+Server Services: CurrencyService, ShopService
+Client Controllers: ShopController
+Shared: ShopConfig, ShopTypes
+Risk: overengineering if shop stays single-script
+```
+
+## Lifecycle Pattern
+
+```text
+Init:
+  create services, load config, prepare remotes
+Start:
+  connect events, start runtime logic
+Destroy:
+  disconnect, release profiles, cleanup controllers
+```
+
+## Specialist Habit
+
+- Ask whether framework is already installed.
+- Do not mix frameworks casually.
+- Keep dependency graph visible in output.

@@ -71,3 +71,45 @@
 - Patch authority before polish.
 - Keep false positives in mind for movement checks.
 - Include concrete validation gates for each exploitable remote.
+
+## Practical Principles
+
+- Treat every remote as a public endpoint.
+- Validate intent before value mutation.
+- Deny silently for normal invalid input.
+- Log repeated suspicious abuse, not every failed input.
+- Prefer resetting impossible state over immediate kick.
+
+## Validation Contract Example
+
+```text
+Remote:
+Exploit Path:
+Server-Owned State:
+Required Checks:
+  type
+  range
+  ownership
+  cooldown
+  state
+  distance
+Patch:
+Regression Test:
+```
+
+## Guard Example
+
+```luau
+local function isValidAmount(value: any, minValue: number, maxValue: number): boolean
+	return type(value) == "number"
+		and value == value
+		and value >= minValue
+		and value <= maxValue
+end
+```
+
+## Specialist Habit
+
+- Start by naming the exploit path.
+- Patch authority before UI.
+- Never allow client to directly grant, price, damage, or complete.

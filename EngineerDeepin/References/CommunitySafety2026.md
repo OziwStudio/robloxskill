@@ -2,7 +2,7 @@
 
 ## Purpose
 
-- Pakai untuk moderation, social features, chat, ads, UGC, youth audience, subscriptions, and publish readiness.
+- Use for moderation, social features, chat, ads, UGC, youth audience, subscriptions, and publish readiness.
 - Treat 2026 policy details as `Verify-Current` unless user provides official current source.
 - Never bypass Roblox safety systems.
 

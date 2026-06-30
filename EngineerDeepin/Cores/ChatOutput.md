@@ -3,7 +3,7 @@
 Use this after Deepin is loaded:
 
 ```text
-Roblox Skill Pluz - DeepinEngineer aktif.
+Roblox Skill Pluz - DeepinEngineer active.
 
 Mode:
 - Engineer: Deepin
@@ -39,5 +39,5 @@ Specialist:
 - Deepin: Framework
 - Deepin: Reviewer
 
-Deepin membaca file sesuai kebutuhan, bukan semua file setiap turn.
+Deepin reads files as needed, not every file on every turn.
 ```

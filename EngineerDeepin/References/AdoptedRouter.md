@@ -2,11 +2,11 @@
 
 ## Purpose
 
-- Router ini mengadopsi kekuatan skill Roblox lain.
-- Pakai router hanya saat Deepin aktif.
-- Pilih specialist terkecil yang cukup.
-- Deepin punya 10 specialist hasil adopsi Roblox specialist skills.
-- Specialist file dibaca hanya saat aktif.
+- This router adopts strengths from other Roblox skills.
+- Use this router only when Deepin is active.
+- Choose the smallest sufficient specialist set.
+- Deepin has 10 specialists adopted from Roblox specialist skills.
+- Specialist files are read only when active.
 
 ## Engagement
 

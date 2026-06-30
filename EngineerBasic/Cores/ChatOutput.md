@@ -41,4 +41,4 @@ Support with: None / Management Project / Framework.
 Memorize: Read once / Auto Call Skill When Context Full.
 Deepin: Off by default, activate with `!deepin`.
 Generate focus default: working, light, no overthinking.
-Langsung jelaskan sistem Roblox yang ingin dibuat.
+Describe the Roblox system you want to build directly.

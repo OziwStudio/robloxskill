@@ -2,8 +2,8 @@
 
 ## Purpose
 
-- Pakai untuk test plan, bugfix regression, publish readiness, CI, and smoke testing.
-- Prioritaskan testing untuk data, purchases, remotes, combat math, and core gameplay.
+- Use for test plans, bugfix regression, publish readiness, CI, and smoke testing.
+- Prioritize testing for data, purchases, remotes, combat math, and core gameplay.
 
 ## Test Priority
 

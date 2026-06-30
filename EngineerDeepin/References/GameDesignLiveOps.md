@@ -2,8 +2,8 @@
 
 ## Purpose
 
-- Pakai untuk core loop, FTUE, retention, social design, difficulty, updates, and launch planning.
-- Game code harus mendukung desain yang membuat pemain kembali.
+- Use for core loop, FTUE, retention, social design, difficulty, updates, and launch planning.
+- Game code must support design that brings players back.
 
 ## Roblox Reality
 

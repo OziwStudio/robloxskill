@@ -6,7 +6,7 @@
 - Do not apply these rules by default.
 - Do not recommend frameworks unless they solve the request.
 - State active support: `Skill Support: Framework`.
-- Keep the operating principle: `SUPER POWER TAPI HEMAT TOKEN`.
+- Keep the operating principle: `POWERFUL BUT TOKEN-EFFICIENT`.
 
 ## Purpose
 

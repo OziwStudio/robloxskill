@@ -2,9 +2,9 @@
 
 ## Purpose
 
-- File ini membuktikan Deepin memiliki specialist terpisah.
-- Baca hanya saat user meminta daftar specialist atau saat audit kelengkapan skill.
-- Saat bekerja normal, baca hanya specialist yang relevan.
+- This file proves Deepin has separate specialists.
+- Read only when the user asks for the specialist list or when auditing skill completeness.
+- During normal work, read only the relevant specialist.
 
 ## Specialist Files
 

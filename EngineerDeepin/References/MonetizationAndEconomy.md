@@ -2,7 +2,7 @@
 
 ## Purpose
 
-- Pakai untuk GamePass, Developer Product, Premium, rewarded ads, pricing, economy, shop, and purchase audit.
+- Use for GamePass, Developer Product, Premium, rewarded ads, pricing, economy, shop, and purchase audit.
 - Security and ethics are mandatory.
 
 ## Server Rule

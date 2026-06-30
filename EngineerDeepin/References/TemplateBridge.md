@@ -2,12 +2,12 @@
 
 ## Purpose
 
-- Bridge ini menghubungkan Deepin ke folder root `Templates/` yang sudah dibundel.
-- Template genre siap pakai wajib berada di root `Templates/`.
-- Jangan mencari template di folder adopsi.
-- Jangan membuat ulang template panjang jika file template sudah ada.
-- Baca template hanya saat genre atau scaffold membutuhkan detail.
-- Untuk daftar template lengkap, baca `EngineerDeepin/References/TemplateCatalog.md`.
+- This bridge connects Deepin to the bundled root `Templates/` folder.
+- Ready-to-use genre templates must live in root `Templates/`.
+- Do not search templates in adoption folders.
+- Do not recreate long templates when the template file already exists.
+- Read a template only when the genre or scaffold needs detail.
+- For the complete template list, read `EngineerDeepin/References/TemplateCatalog.md`.
 
 ## Expected Folder
 

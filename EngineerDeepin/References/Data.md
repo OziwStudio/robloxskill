@@ -2,8 +2,8 @@
 
 ## Purpose
 
-- Pakai untuk save/load, ProfileStore/ProfileService, migration, OrderedDataStore, cross-server data, and data audits.
-- Pakai `ImplementationPatterns.md` untuk schema, reconciliation, dan receipt idempotency.
+- Use for save/load, ProfileStore/ProfileService, migration, OrderedDataStore, cross-server data, and data audits.
+- Use `ImplementationPatterns.md` for schema, reconciliation, and receipt idempotency.
 
 ## Rules
 

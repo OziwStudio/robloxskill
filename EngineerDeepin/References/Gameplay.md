@@ -2,8 +2,8 @@
 
 ## Purpose
 
-- Pakai untuk combat, progression, inventory, economy, quest, round, genre, and game loop.
-- Pakai `ImplementationPatterns.md` untuk combat authority dan round state machine.
+- Use for combat, progression, inventory, economy, quest, round, genre, and game loop.
+- Use `ImplementationPatterns.md` for combat authority and round state machine.
 
 ## Core Loop
 

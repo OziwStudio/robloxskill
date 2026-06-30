@@ -2,8 +2,8 @@
 
 ## Purpose
 
-- Pakai untuk common Roblox system blueprint and complete-system planning.
-- Pakai `ImplementationPatterns.md` saat blueprint perlu langsung menjadi script.
+- Use for common Roblox system blueprints and complete-system planning.
+- Use `ImplementationPatterns.md` when the blueprint needs to become script directly.
 
 ## System Blueprint
 

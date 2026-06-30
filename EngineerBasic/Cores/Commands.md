@@ -12,14 +12,14 @@
 | `!read-model` | Read `EngineerBasic/Cores/AIModel.md`. |
 | `!read-output` | Read `EngineerBasic/Cores/ChatOutput.md`. |
 | `!read-architecture` | Read `EngineerBasic/References/Architecture.md`. |
-| `!read-networking` | Read `EngineerBasic/References/Networking.md`. |
-| `!read-security` | Read `EngineerBasic/References/Security.md`. |
-| `!read-data` | Read `EngineerBasic/References/Data.md`. |
-| `!read-luau` | Read `EngineerBasic/References/Luau-patterns.md`. |
-| `!read-systems` | Read `EngineerBasic/References/Systems.md`. |
+| `!read-networking` | Read `EngineerBasic/References/Performance.md` networking section. |
+| `!read-security` | Read `EngineerBasic/References/Architecture.md` security section. |
+| `!read-data` | Read `EngineerBasic/References/Architecture.md` data section. |
+| `!read-luau` | Read `EngineerBasic/References/Architecture.md` Luau patterns section. |
+| `!read-systems` | Read `EngineerBasic/References/Architecture.md` systems section. |
 | `!read-uiux` | Read `EngineerBasic/References/UIUX.md`. |
 | `!read-performance` | Read `EngineerBasic/References/Performance.md`. |
-| `!read-gameplay` | Read `EngineerBasic/References/Gameplay.md`. |
+| `!read-gameplay` | Read `EngineerBasic/References/Performance.md` gameplay section. |
 | `!read-support-framework` | Read `Supports/Framework.md`. |
 
 ## Skill Support
@@ -59,17 +59,17 @@
 
 ## Keyword Rules
 
-- `architecture`: read architecture only.
+- `architecture`: read Architecture reference.
 - `settings`: read settings only.
 - `deepin`: read Deepin only when activated.
-- `networking`: read networking only.
-- `security`: read security only.
-- `data`: read data only.
-- `luau`: read Luau patterns only.
-- `systems`: read system blueprints only.
+- `networking`: read Performance reference networking section.
+- `security`: read Architecture reference security section.
+- `data`: read Architecture reference data section.
+- `luau`: read Architecture reference Luau patterns section.
+- `systems`: read Architecture reference systems section.
 - `uiux`: read UIUX only.
-- `performance`: read performance only.
-- `gameplay`: read gameplay only.
+- `performance`: read Performance reference.
+- `gameplay`: read Performance reference gameplay section.
 - `project-management`: read Project Management support only when activated.
 - `framework`: read Framework support only when activated.
 - `bugfix`: focus on bug fixing mode.

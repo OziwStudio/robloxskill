@@ -2,19 +2,19 @@
 
 ## Purpose
 
-- Reference ini mengadopsi kekuatan modern Roblox API awareness.
-- Pakai hanya saat Deepin aktif dan user meminta modern API, LiveOps, avatar modern, UI modern, Open Cloud, streaming, atau publish readiness.
-- Jangan menganggap API terbaru selalu tersedia.
-- Verifikasi API sebelum membuatnya sebagai hard requirement.
+- This reference adopts modern Roblox API awareness strengths.
+- Use only when Deepin is active and the user asks for modern APIs, LiveOps, modern avatar, modern UI, Open Cloud, streaming, or publish readiness.
+- Do not assume the newest API is always available.
+- Verify an API before making it a hard requirement.
 
 ## API Confidence
 
 | Level | Rule |
 |---|---|
-| `Stable` | boleh dipakai langsung jika sesuai kebutuhan |
-| `Project-Enabled` | pakai jika project sudah mengaktifkan atau user meminta |
-| `Verify-Current` | cek dokumentasi/current API sebelum dipakai |
-| `Fallback-Required` | sediakan alternatif stabil |
+| `Stable` | may be used directly when it fits the need |
+| `Project-Enabled` | use when the project already enables it or the user requests it |
+| `Verify-Current` | check current documentation/API before use |
+| `Fallback-Required` | provide a stable alternative |
 
 ## Modern Decision Flow
 
