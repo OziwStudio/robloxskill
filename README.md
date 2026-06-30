@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Terla Community Roblox Skill
 
 ## What This Is
@@ -100,4 +99,3 @@ Each time this skill is edited, increase the last part by one.
 - From version `1.2.13`, new skill documentation should use English as the primary language.
 =======
 # robloxskill
->>>>>>> d26dcc71086e0df6d15f23c8941198d85a499eb5
