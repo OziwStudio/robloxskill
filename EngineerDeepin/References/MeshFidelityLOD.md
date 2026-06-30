@@ -4,7 +4,7 @@
 
 - Use for visual audits, MeshPart, large maps, mobile performance, asset import, and world optimization.
 - Focus on `RenderFidelity`, `CollisionFidelity`, and `LevelOfDetail`.
-- Read with `Performance.md` when the bottleneck is rendering, physics, part count, mesh, or mobile.
+- Read with `references/Performance.md` when the bottleneck is rendering, physics, part count, mesh, or mobile.
 
 ## Priority
 

@@ -37,7 +37,7 @@
 | `Deepin: Networking` | Focus remotes and replication. |
 | `Deepin: Security` | Focus anti-exploit and authority. |
 | `Deepin: Data` | Focus persistence and transactions. |
-| `Deepin: Performance` | Focus optimization and memory. |
+| `Deepin: Performance` | Focus `references/Performance.md`. |
 | `Deepin: Gameplay` | Focus game systems. |
 | `Deepin: UIUX` | Focus UI and client UX. |
 | `Deepin: Reviewer` | Focus review and production readiness. |
@@ -51,7 +51,7 @@
 | `Deepin: Architecture` | `EngineerDeepin/Specialists/Architecture.md` |
 | `Deepin: Networking` | `EngineerDeepin/Specialists/Networking.md` |
 | `Deepin: Security` | `EngineerDeepin/Specialists/Security.md` |
-| `Deepin: Performance` | `EngineerDeepin/Specialists/Performance.md` |
+| `Deepin: Performance` | `references/Performance.md` |
 | `Deepin: Data` | `EngineerDeepin/Specialists/Data.md` |
 | `Deepin: Gameplay` | `EngineerDeepin/Specialists/Gameplay.md` |
 | `Deepin: UIUX` | `EngineerDeepin/Specialists/UIUX.md` |
@@ -135,16 +135,16 @@
 - `opencloud`: read ModernRoblox, data, security.
 - `liveops`: read ModernRoblox and data.
 - `streaming`: read ModernRoblox and performance.
-- `animation`: read AnimationVFX and Performance.
-- `vfx`: read AnimationVFX and Performance.
-- `sfx`: read AnimationVFX and Performance.
-- `particles`: read AnimationVFX and Performance.
+- `animation`: read AnimationVFX and `references/Performance.md`.
+- `vfx`: read AnimationVFX and `references/Performance.md`.
+- `sfx`: read AnimationVFX and `references/Performance.md`.
+- `particles`: read AnimationVFX and `references/Performance.md`.
 - `camera-shake`: read AnimationVFX and UIUX.
 - `cutscene`: read AnimationVFX and UIUX.
-- `renderfidelity`: read MeshFidelityLOD and Performance.
-- `collisionfidelity`: read MeshFidelityLOD and Performance.
-- `levelofdetail`: read MeshFidelityLOD and Performance.
-- `lod`: read MeshFidelityLOD and Performance.
+- `renderfidelity`: read MeshFidelityLOD and `references/Performance.md`.
+- `collisionfidelity`: read MeshFidelityLOD and `references/Performance.md`.
+- `levelofdetail`: read MeshFidelityLOD and `references/Performance.md`.
+- `lod`: read MeshFidelityLOD and `references/Performance.md`.
 - `community-safety`: read CommunitySafety2026.
 - `policy`: read CommunitySafety2026.
 - `implementation`: read ImplementationPatterns.

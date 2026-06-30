@@ -3,7 +3,7 @@
 ## Purpose
 
 - Use for animation, VFX, SFX timing, particles, tweens, camera shake, cutscenes, abilities, combat feedback, and visual polish.
-- Read with `Performance.md` when effects may affect FPS, memory, mobile, or network replication.
+- Read with `references/Performance.md` when effects may affect FPS, memory, mobile, or network replication.
 - Read with `Gameplay.md` when VFX represents gameplay feedback.
 - Read with `Security.md` when client VFX could be confused with server-owned outcomes.
 

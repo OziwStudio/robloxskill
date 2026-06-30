@@ -62,7 +62,7 @@
 | Architecture | `EngineerDeepin/Specialists/Architecture.md` |
 | Networking | `EngineerDeepin/Specialists/Networking.md` |
 | Security | `EngineerDeepin/Specialists/Security.md` |
-| Performance | `EngineerDeepin/Specialists/Performance.md` |
+| Performance | `references/Performance.md` |
 | Data | `EngineerDeepin/Specialists/Data.md` |
 | Gameplay | `EngineerDeepin/Specialists/Gameplay.md` |
 | UIUX | `EngineerDeepin/Specialists/UIUX.md` |

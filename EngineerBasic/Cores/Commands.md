@@ -12,14 +12,14 @@
 | `!read-model` | Read `EngineerBasic/Cores/AIModel.md`. |
 | `!read-output` | Read `EngineerBasic/Cores/ChatOutput.md`. |
 | `!read-architecture` | Read `EngineerBasic/References/Architecture.md`. |
-| `!read-networking` | Read `EngineerBasic/References/Performance.md` networking section. |
+| `!read-networking` | Read `references/Performance.md` networking section. |
 | `!read-security` | Read `EngineerBasic/References/Architecture.md` security section. |
 | `!read-data` | Read `EngineerBasic/References/Architecture.md` data section. |
 | `!read-luau` | Read `EngineerBasic/References/Architecture.md` Luau patterns section. |
 | `!read-systems` | Read `EngineerBasic/References/Architecture.md` systems section. |
 | `!read-uiux` | Read `EngineerBasic/References/UIUX.md`. |
-| `!read-performance` | Read `EngineerBasic/References/Performance.md`. |
-| `!read-gameplay` | Read `EngineerBasic/References/Performance.md` gameplay section. |
+| `!read-performance` | Read `references/Performance.md`. |
+| `!read-gameplay` | Read `references/Performance.md` gameplay section. |
 | `!read-support-framework` | Read `Supports/Framework.md`. |
 
 ## Skill Support

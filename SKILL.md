@@ -1,7 +1,7 @@
 ---
 name: roblox-skill-pluz
 description: >
-  Roblox Skill Pluz v1.4.02 by Terla Community for Roblox Studio and Luau. A two-mode skill with
+  Roblox Skill Pluz v1.4.04 by Terla Community for Roblox Studio and Luau. A two-mode skill with
   Basic for light, token-efficient work and Deepin for deeper specialist analysis,
   principal-engineer depth, risk matrix routing, stronger review gates, art-directed UI/UX, modern Roblox guidance, animation/VFX coverage, community safety,
   complete game flow, bundled templates, and optional
@@ -80,7 +80,7 @@ Read only when needed by task or command.
 |---|---|
 | `EngineerBasic/References/Architecture.md` | architecture, security, systems, data, Luau patterns |
 | `EngineerBasic/References/UIUX.md` | Roblox UI and client UX |
-| `EngineerBasic/References/Performance.md` | performance, networking, gameplay |
+| `references/Performance.md` | performance, networking, gameplay |
 
 ## Deepin Mode
 
@@ -125,7 +125,7 @@ Read only when Deepin is active and needed.
 | `EngineerDeepin/References/Networking.md` | deep networking |
 | `EngineerDeepin/References/Security.md` | deep security |
 | `EngineerDeepin/References/Data.md` | deep data |
-| `EngineerDeepin/References/Performance.md` | deep performance |
+| `references/Performance.md` | deep performance |
 | `EngineerDeepin/References/Gameplay.md` | deep gameplay |
 | `EngineerDeepin/References/UIUX.md` | deep UIUX |
 | `EngineerDeepin/References/Luau-patterns.md` | deep Luau |

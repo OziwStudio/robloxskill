@@ -15,7 +15,7 @@
 | Networking | `EngineerDeepin/Specialists/Networking.md` | remotes, replication, prediction, rate limits |
 | Security | `EngineerDeepin/Specialists/Security.md` | exploit paths, authority, validation, permissions |
 | Data | `EngineerDeepin/Specialists/Data.md` | DataStore, ProfileStore, migration, receipts |
-| Performance | `EngineerDeepin/Specialists/Performance.md` | memory, CPU, loops, streaming, profiling |
+| Performance | `references/Performance.md` | memory, CPU, loops, streaming, profiling |
 | Gameplay | `EngineerDeepin/Specialists/Gameplay.md` | combat, inventory, economy, progression |
 | UIUX | `EngineerDeepin/Specialists/UIUX.md` | UI state, input, responsiveness, accessibility |
 | Framework | `EngineerDeepin/Specialists/Framework.md` | Knit, ProfileStore, Fusion, Rojo only when enabled |

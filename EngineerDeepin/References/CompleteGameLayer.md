@@ -30,11 +30,11 @@
 |---|---|
 | New game | `WorkflowPlaybooks.md`, `GameDesignLiveOps.md`, `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md` |
 | Simulator | `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md`, `Gameplay.md`, `Data.md` |
-| Tycoon | `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md`, `Performance.md`, `Data.md` |
+| Tycoon | `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md`, `references/Performance.md`, `Data.md` |
 | Obby | `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md`, `Gameplay.md`, `UIUX.md` |
 | RPG | `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md`, `Gameplay.md`, `Data.md`, `Networking.md` |
-| Horror | `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md`, `GameDesignLiveOps.md`, `Performance.md` |
-| Battle royale | `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md`, `Networking.md`, `Security.md`, `Performance.md` |
+| Horror | `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md`, `GameDesignLiveOps.md`, `references/Performance.md` |
+| Battle royale | `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md`, `Networking.md`, `Security.md`, `references/Performance.md` |
 | Monetization | `MonetizationAndEconomy.md`, `ProductionGates.md`, `Data.md`, `Security.md` |
 | Testing | `TestingQA.md`, `WorkflowPlaybooks.md` |
 | Studio automation | `StudioModes.md` |

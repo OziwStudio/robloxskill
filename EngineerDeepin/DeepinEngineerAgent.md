@@ -84,7 +84,7 @@
 | `Architecture` | `EngineerDeepin/Specialists/Architecture.md` |
 | `Networking` | `EngineerDeepin/Specialists/Networking.md` |
 | `Security` | `EngineerDeepin/Specialists/Security.md` |
-| `Performance` | `EngineerDeepin/Specialists/Performance.md` |
+| `Performance` | `references/Performance.md` |
 | `Data` | `EngineerDeepin/Specialists/Data.md` |
 | `Gameplay` | `EngineerDeepin/Specialists/Gameplay.md` |
 | `UIUX` | `EngineerDeepin/Specialists/UIUX.md` |
@@ -117,7 +117,7 @@
 - `!bugfix`: activate Luau + Reviewer, add domain specialist if needed.
 - `!vulnfix`: activate Security + Networking + Data when relevant.
 - `!audit`: activate Reviewer + relevant domain specialists.
-- `!perfcheck`: activate Performance + Networking when replication is involved.
+- `!perfcheck`: activate `references/Performance.md` + Networking when replication is involved.
 - `!publishcheck`: activate Reviewer + Security + Performance + Data.
 - `!deepin`: activate Deepin router and production gates.
 - `!modernapi`: activate Architecture + Reviewer + relevant domain specialists.
@@ -126,8 +126,8 @@
 - `!testplan`: activate Reviewer + Luau + relevant domain specialists.
 - `!mcp-mode`: use StudioModes.
 - Code generation with concrete examples: read ImplementationPatterns.
-- Animation/VFX/SFX/camera feedback tasks: read AnimationVFX + Performance.
-- Mesh/render/collision/LOD tasks: read MeshFidelityLOD + Performance.
+- Animation/VFX/SFX/camera feedback tasks: read AnimationVFX + `references/Performance.md`.
+- Mesh/render/collision/LOD tasks: read MeshFidelityLOD + `references/Performance.md`.
 - Chat/social/UGC/policy tasks: read CommunitySafety2026 + ModernRoblox.
 - `Deepin: SpecialistName`: read only that specialist file and directly related references.
 
