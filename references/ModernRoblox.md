@@ -88,8 +88,8 @@
 
 ## Missed Docs
 
-- For mesh physics and rendering, read `EngineerDeepin/References/MeshFidelityLOD.md`.
-- For community standards, youth access, chat, ads, UGC, and policy-sensitive systems, read `EngineerDeepin/References/CommunitySafety2026.md`.
+- For mesh physics and rendering, read `references/MeshFidelityLOD.md`.
+- For community standards, youth access, chat, ads, UGC, and policy-sensitive systems, read `references/CommunitySafety2026.md`.
 
 ## Brownfield Upgrade
 
@@ -210,3 +210,4 @@
 - For code, implement stable path unless user asks modern-only.
 - For audit, flag modern API assumptions.
 - For migration, suggest incremental upgrade.
+

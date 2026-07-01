@@ -12,7 +12,7 @@ Core principle: `SUPER POWER TAPI HEMAT TOKEN`.
 - Author: The Owner (Oziwwwwww)
 - Skill name: `Roblox Skill Pluz`
 - Default engineer: `Basic`
-- Version: `1.4.07`
+- Version: `1.4.09`
 - Primary language: English
 - Secondary language: Indonesian
 
@@ -33,8 +33,8 @@ By default, the skill stays light, reads once, and keeps only the important rule
 
 ## Ready Assets
 
-- Genre templates are included and ready in `Templates/`.
-- Deepin specialist files are included in `EngineerDeepin/Specialists/`.
+- Genre templates are included and ready in `Templates/GameTemplates/`.
+- Deepin reference files are included in `references/`.
 - Deepin specialists include practical principles, concrete patterns, and domain examples.
 - Deepin has manifest files for template and specialist completeness.
 - Deepin has concrete implementation patterns for modules, cleanup, remotes, validation, data schema, receipts, combat, and round flow.
@@ -96,3 +96,4 @@ Each time this skill is edited, increase the last part by one.
 - `UserId` is not hardcoded.
 - If a whitelist or permission list is needed, the user must provide the `UserId`.
 - From version `1.2.13`, new skill documentation should use English as the primary language.
+

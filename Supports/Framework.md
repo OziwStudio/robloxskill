@@ -1,7 +1,6 @@
 # Framework Support
 
 ## Activation
-
 - Load this file only when user activates Framework support.
 - Do not apply these rules by default.
 - Do not recommend frameworks unless they solve the request.
@@ -9,13 +8,11 @@
 - Keep the operating principle: `POWERFUL BUT TOKEN-EFFICIENT`.
 
 ## Purpose
-
 - Use this support for Roblox framework decisions, service/controller architecture, production persistence, reactive UI, ECS, dependency injection, async flow, reusable utility modules, and large-team project structure.
 - Framework support must make the solution clearer, safer, or easier to scale.
 - If plain ModuleScripts are enough, choose plain ModuleScripts.
 
 ## Scope Map
-
 | Scope | Use For | Default Position |
 |---|---|---|
 | Knit | service/controller convention, remotes abstraction, medium-large systems | recommended when service boundaries matter |
@@ -31,7 +28,6 @@
 | Dependency Injection | testable services, explicit dependencies | use for complex services and mocks |
 
 ## Decision Flow
-
 1. Identify project type: greenfield or brownfield.
 2. Identify existing framework.
 3. Identify requested framework.
@@ -42,7 +38,6 @@
 8. Generate code using the chosen lifecycle.
 
 ## Do Not Use Framework When
-
 - The system is one isolated Script or LocalScript.
 - There is no shared lifecycle problem.
 - There is no team or scale benefit.
@@ -51,7 +46,6 @@
 - Existing project style is framework-free and the feature can stay local.
 
 ## Global Rules
-
 - Server services own gameplay outcomes.
 - Client controllers own input and presentation.
 - Shared modules own types, constants, contracts, and pure helpers.
@@ -66,14 +60,12 @@
 ## Knit Scope
 
 ### Use When
-
 - System needs clear server `Service` and client `Controller`.
 - Multiple services need lifecycle order.
 - Remotes need consistent convention.
 - Team needs predictable boundaries.
 
 ### Structure
-
 ```text
 ServerScriptService/
   SystemServer/
@@ -96,7 +88,6 @@ ReplicatedStorage/
 ```
 
 ### Technical Rules
-
 - Services expose server-owned methods.
 - Controllers call services through declared client APIs.
 - Never trust controller data.
@@ -105,7 +96,6 @@ ReplicatedStorage/
 - Prefer explicit dependencies over hidden global access.
 
 ### Output Must Include
-
 - Service list.
 - Controller list.
 - Shared module list.
@@ -115,14 +105,12 @@ ReplicatedStorage/
 ## ProfileStore Scope
 
 ### Use When
-
 - Player data has value.
 - Data needs session locking.
 - There are purchases, inventory, progression, economy, or migration.
 - User asks for production persistence.
 
 ### Technical Rules
-
 - Define `CURRENT_DATA_VERSION`.
 - Define default profile template.
 - Reconcile missing fields on load.
@@ -133,7 +121,6 @@ ReplicatedStorage/
 - Never expose profile object to client.
 
 ### Required Output
-
 ```text
 Profile Key:
 Default Schema:
@@ -147,14 +134,12 @@ Studio Test Prefix:
 ## Fusion Scope
 
 ### Use When
-
 - UI has reactive state.
 - HUD/shop/inventory updates often.
 - Project wants Lua-native component UI.
 - UI complexity is medium.
 
 ### Technical Rules
-
 - Keep authoritative data server-side.
 - Client state mirrors server state.
 - Store UI state separately from gameplay data.
@@ -163,7 +148,6 @@ Studio Test Prefix:
 - Keep components small and named by domain.
 
 ### Output Must Include
-
 - State sources.
 - Component tree.
 - Cleanup owner.
@@ -173,13 +157,11 @@ Studio Test Prefix:
 ## React-Roblox Scope
 
 ### Use When
-
 - UI has many screens and reusable components.
 - Team already knows React patterns.
 - UI needs routing, state containers, or design system scale.
 
 ### Technical Rules
-
 - Keep server data as external source.
 - Use client store only for UI state/cache.
 - Avoid putting purchase authority in UI components.
@@ -188,7 +170,6 @@ Studio Test Prefix:
 - Avoid framework use for one simple HUD.
 
 ### Output Must Include
-
 - Component hierarchy.
 - Store/state model.
 - Remotes read/write boundary.
@@ -198,14 +179,12 @@ Studio Test Prefix:
 ## Matter ECS Scope
 
 ### Use When
-
 - There are many entities with repeated behavior.
 - Simulation is component-driven.
 - Systems need predictable iteration.
 - Object count or behavior variety is high.
 
 ### Technical Rules
-
 - Components store data.
 - Systems mutate through defined flow.
 - Server owns authoritative gameplay components.
@@ -214,7 +193,6 @@ Studio Test Prefix:
 - Avoid ECS for simple services.
 
 ### Output Must Include
-
 - Components.
 - Systems.
 - Authority owner.
@@ -224,13 +202,11 @@ Studio Test Prefix:
 ## Flamework Scope
 
 ### Use When
-
 - Project already uses TypeScript/roblox-ts.
 - User explicitly asks for Flamework.
 - Team wants decorator-based dependency injection.
 
 ### Technical Rules
-
 - Do not introduce Flamework into a Luau-only project casually.
 - Respect existing TS folder layout.
 - Keep services server-authoritative.
@@ -238,7 +214,6 @@ Studio Test Prefix:
 - Keep decorators and dependency injection predictable.
 
 ### Output Must Include
-
 - TS/Flamework assumption.
 - Service/controller class list.
 - Dependency injection map.
@@ -247,12 +222,10 @@ Studio Test Prefix:
 ## RbxUtil Scope
 
 ### Use When
-
 - Need focused utilities without full framework lock-in.
 - Need `Signal`, `Trove`, `Promise`, `TableUtil`, or similar helper.
 
 ### Technical Rules
-
 - Import only the utility needed.
 - Avoid turning utility modules into architecture.
 - Use Trove/Maid-like cleanup for connections and effects.
@@ -261,12 +234,10 @@ Studio Test Prefix:
 ## Promise Scope
 
 ### Use When
-
 - Multiple async operations must compose.
 - Need timeout, retry, cancellation, or load pipelines.
 
 ### Technical Rules
-
 - Use Promise for async flow, not for simple one-call work.
 - Handle rejection.
 - Avoid unbounded chains.
@@ -276,12 +247,10 @@ Studio Test Prefix:
 ## Signal Scope
 
 ### Use When
-
 - Same-runtime modules need decoupled events.
 - Service wants internal event API.
 
 ### Technical Rules
-
 - Do not use Signal across client/server.
 - Disconnect listeners on cleanup.
 - Do not fire unbounded high-frequency signals.
@@ -290,13 +259,11 @@ Studio Test Prefix:
 ## Component System Scope
 
 ### Use When
-
 - World objects use tags.
 - Many instances share behavior.
 - CollectionService can attach/detach logic cleanly.
 
 ### Technical Rules
-
 - Tag only valid instance classes.
 - Attach on tag added.
 - Cleanup on tag removed and instance destroyed.
@@ -306,13 +273,11 @@ Studio Test Prefix:
 ## Dependency Injection Scope
 
 ### Use When
-
 - Services need tests.
 - Services have replaceable adapters.
 - Circular dependencies are a risk.
 
 ### Technical Rules
-
 - Pass dependencies explicitly.
 - Keep constructor side-effect light.
 - Use interfaces/types for adapters.
@@ -320,9 +285,7 @@ Studio Test Prefix:
 - Do not inject raw client-owned authority into server services.
 
 ## Framework Architecture Output
-
 When generating a framework-backed system, output:
-
 ```text
 Skill Support: Framework
 Framework Choice:
@@ -339,7 +302,6 @@ Risks:
 ```
 
 ## Framework Review Checklist
-
 - Does framework reduce real complexity?
 - Is the service boundary clear?
 - Is server authority preserved?
@@ -352,7 +314,6 @@ Risks:
 - Is there a module-only fallback?
 
 ## Anti-Patterns
-
 - Adding Knit for one tiny server script.
 - Adding React for one static frame.
 - Using ECS for a normal shop.

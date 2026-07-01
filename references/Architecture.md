@@ -1,12 +1,10 @@
 # Architecture
 
 ## Purpose
-
 - Use for system boundaries, placement, ownership, lifecycle, module shape, and require rules.
 - This is the single architecture reference for Basic and Deepin.
 
 ## Classifier
-
 - Classify each request as `Simple`, `Moderate`, or `Complex`.
 - `Simple`: one direct isolated script.
 - `Moderate`: server-client flow, remotes, config, or multiple files.
@@ -14,7 +12,6 @@
 - State the class before the file tree.
 
 ## Placement
-
 - `ReplicatedStorage`: shared modules, remotes, shared configs, shared assets.
 - `ServerScriptService`: server authority and private logic.
 - `StarterPlayerScripts`: client controllers, input, camera, local UI logic.
@@ -23,7 +20,6 @@
 - `Workspace`: live world only.
 
 ## Layout
-
 ```text
 ReplicatedStorage/
   SystemName/
@@ -45,7 +41,6 @@ StarterPlayerScripts/
 ```
 
 ## File Types
-
 - `.luau` is the main extension.
 - `.lua` is secondary.
 - `.server.luau` means Server Script.
@@ -57,14 +52,12 @@ StarterPlayerScripts/
 - Do not require `init`.
 
 ## Lifecycle
-
 - `Init()` prepares config, cache, and remotes.
 - `Start()` connects events and begins runtime work.
 - `Destroy()` disconnects and clears state.
 - Prefer dependency injection when modules can cycle.
 
 ## Server Entry
-
 ```lua
 --[[
 # SystemName v1.0.0
@@ -102,7 +95,6 @@ end
 ```
 
 ## Module Shape
-
 ```lua
 local Module = {}
 
@@ -119,7 +111,6 @@ return Module
 ```
 
 ## Boundary Rules
-
 - Server owns rules and persistent state.
 - Client owns input and presentation.
 - Shared owns types, constants, pure helpers, and remote contracts.
@@ -129,7 +120,6 @@ return Module
 - Client controllers should send intent and render state.
 
 ## Communication
-
 - RemoteEvent: async client/server messaging.
 - RemoteFunction: request/response only when blocking is acceptable.
 - BindableEvent: same-side decoupled communication.
@@ -138,7 +128,6 @@ return Module
 - Use fewer remotes when one typed action remote is enough.
 
 ## Validation
-
 - Server validates all inputs.
 - Validate player identity.
 - Validate type.
@@ -150,7 +139,6 @@ return Module
 - Validate permission.
 
 ## System Patterns
-
 - Start from classifier.
 - Build file tree first.
 - Put shared modules in `ReplicatedStorage/SystemName`.
@@ -162,13 +150,11 @@ return Module
 - Avoid circular requires.
 
 ## Outputs
-
 - For `!genfull`, output class and file tree first.
 - Show complete paths before code blocks.
 - Mention migration risk before breaking changes.
 
 ## Examples
-
 ```text
 Class: Moderate
 Reason: server-client flow, remotes, shared config.

@@ -1,11 +1,9 @@
 # UIUX
 
 ## Purpose
-
 - Use for GUI, HUD, shop, inventory, mobile, gamepad, UI state, UX review, art direction, style language, and visual polish.
 
 ## UI Rules
-
 - Before generating UI, ask:
   - `Do you already have a UI, or should I generate it by script?`
   - `Should the UI generator script be merged with the logic, or separated from logic/UX?`
@@ -29,7 +27,6 @@
 - Generated UI must avoid generic AI UI slop.
 
 ## Art Direction
-
 - Pick one style family: `Cartoon`, `Stylized`, `Realistic`, `Glossy`, `Glassy`, `Minimal`, `Arcade`, or `Horror`.
 - Match the style to genre, audience, and game economy.
 - Define material language: flat, glossy, glassy, textured, outlined, metallic, paper, stone, neon, or toy-like.
@@ -38,7 +35,6 @@
 - Use motion only for feedback, reward, transition, or attention.
 
 ## Anti-Slop Rules
-
 - No default purple-blue gradient unless requested by genre.
 - No repeated identical cards without hierarchy.
 - No decorative blobs or meaningless background shapes.
@@ -49,7 +45,6 @@
 - No unbounded animations.
 
 ## Layout
-
 - Prefer scale and constraints.
 - Use `UIScale`, `UISizeConstraint`, `UIAspectRatioConstraint`.
 - Use `UIListLayout`, `UIGridLayout`, `UIPadding`.
@@ -61,7 +56,6 @@
 - Disable `AutoLocalize` for brand names, fantasy terms, and special names when translation would corrupt meaning.
 
 ## Patterns
-
 - Shop: clear value, clear price, no deceptive prompt.
 - Health bar: readable, animated but bounded.
 - Notification: short, stack-limited, auto-dismiss.
@@ -69,7 +63,6 @@
 - Inventory: filtering, search, capacity, item details.
 
 ## Style Patterns
-
 - Cartoon shop: bold outline, warm CTA, large item art, rarity border.
 - Stylized RPG inventory: textured panels, item silhouettes, category tabs, readable stats.
 - Realistic tactical HUD: muted colors, minimal decoration, high contrast alerts.
@@ -78,7 +71,6 @@
 - Arcade results UI: bold score, reward burst, medal/badge hierarchy, short celebratory motion.
 
 ## Performance
-
 - Do not create UI every frame.
 - Pool repeated UI when needed.
 - Disconnect UI events on close/destroy.
@@ -89,7 +81,6 @@
 - Use simplified UI effects on low-end devices.
 
 ## Anti-Patterns
-
 - Hardcoded layout.
 - Cluttered screens.
 - Hidden information.

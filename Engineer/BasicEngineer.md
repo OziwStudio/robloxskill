@@ -1,3 +1,5 @@
+# BasicEngineer Agent
+
 # AI Model
 
 ## Identity
@@ -308,7 +310,7 @@ MainScript/
 
 ## Engine Switch
 - `Engineer: Basic` is the only default mode visible here.
-- If user asks for Deepin, hand off to `EngineerDeepin/Cores/Commands.md`.
+- If user asks for Deepin, hand off to `Engineer/DeepinEngineer.md`.
 
 # ChatOutput of Basic
 

@@ -17,7 +17,7 @@
 
 ## Standards
 
-- Read `EngineerDeepin/References/ImplementationPatterns.md` when code examples are needed.
+- Read `references/ImplementationPatterns.md` when code examples are needed.
 - Use `Module Shape` and `Cleanup Container` patterns for generated modules.
 - Prefer local variables.
 - Prefer explicit names.
@@ -101,3 +101,35 @@ end
 - If code touches Roblox services, name the service boundary.
 - If code stores state, name the owner and cleanup path.
 - If code yields, explain why the yield is safe.
+
+## Deepin Merge
+
+### Scope Additions
+
+- Typed module API.
+- Cleanup container.
+- Refactor safety.
+- Runtime reliability.
+- Boundary validation.
+
+### Extra Standards
+
+- Read the module-shape and cleanup patterns before writing reusable modules.
+- Keep top-level module work cheap.
+- Use explicit contracts for public functions.
+- Put runtime guards next to type boundaries.
+- Prefer composition over inheritance.
+- Avoid circular require and deep nesting.
+- Avoid magic values in shared code.
+
+### Practical Rules
+
+- Constructor, setup, runtime, and cleanup should be separated.
+- Public APIs should return explicit success or failure when needed.
+- `--!strict` is preferred for core modules when practical.
+- Local state ownership must be obvious.
+
+### Extra Output Focus
+
+- Include a concrete module skeleton when generating code.
+- Mention maintainability risk when reviewing code.

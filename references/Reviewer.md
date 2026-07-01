@@ -1,7 +1,6 @@
 # Reviewer Specialist
 
 ## Scope
-
 - Code review.
 - Architecture review.
 - Security review.
@@ -12,12 +11,10 @@
 - Production readiness.
 
 ## Activate When
-
 - User asks review, audit, refactor, production readiness, publish check, or final validation.
 - Any Deepin task reaches final gate.
 
 ## Review Priority
-
 1. Critical exploit.
 2. Data-loss risk.
 3. Runtime failure.
@@ -30,7 +27,6 @@
 10. Developer experience.
 
 ## Review Gate
-
 - Can this scale?
 - Can this be maintained?
 - Can this be secured?
@@ -42,7 +38,6 @@
 - Does first-time user flow work?
 
 ## Output Format
-
 ```text
 [summary]
 [findings]
@@ -53,14 +48,12 @@
 ```
 
 ## Readiness
-
 - `Not Ready`: must fix before release.
 - `Partially Ready`: works but needs hardening.
 - `Production Ready`: safe enough for normal release.
 - `Enterprise Ready`: suitable for large live-service growth.
 
 ## Anti-Patterns
-
 - Approving working code without risk review.
 - Vague recommendation.
 - Subjective opinion without technical reason.
@@ -68,7 +61,6 @@
 - Missing production readiness.
 
 ## Output Focus
-
 - Findings first.
 - Severity order.
 - File and line when available.
@@ -77,7 +69,6 @@
 - Summary stays short.
 
 ## Practical Principles
-
 - Review behavior, not just style.
 - A working demo can still be unsafe.
 - Severity must explain user impact.
@@ -85,7 +76,6 @@
 - Missing tests are risk, not decoration.
 
 ## Finding Format
-
 ```text
 Severity: Critical
 Area: Security
@@ -97,7 +87,6 @@ Regression Test:
 ```
 
 ## Readiness Rubric
-
 ```text
 Not Ready:
   exploitable, data-loss risk, or runtime blocker
@@ -110,7 +99,6 @@ Enterprise Ready:
 ```
 
 ## Specialist Habit
-
 - Lead with the highest-risk issue.
 - Do not approve vague architecture.
 - Always check security, data, cleanup, performance, and user flow.

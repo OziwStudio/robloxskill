@@ -17,7 +17,7 @@
 
 ## Standards
 
-- Read `EngineerDeepin/References/ImplementationPatterns.md` when schema, migration, or receipt examples are needed.
+- Read `references/ImplementationPatterns.md` when schema, migration, or receipt examples are needed.
 - Use `Profile Schema` and `Receipt Idempotency` patterns.
 - Player data is sacred.
 - Favor safety over convenience.
@@ -102,3 +102,40 @@ end
 - Always define load, mutate, save, release.
 - Always say what happens if load fails.
 - Always separate persistent data from session-only cache.
+
+## Deepin Merge
+
+### Scope Additions
+
+- Profile schema.
+- Receipt idempotency.
+- Economy reconciliation.
+- Recovery flow.
+- Backup and rollback.
+- Purchase safety.
+
+### Extra Standards
+
+- Keep player data sacred.
+- Read the schema and receipt patterns before writing data code.
+- Favor safe migration over fast migration.
+- Use one server-owned data service for all player mutations.
+- Reconcile missing fields on load, not during gameplay.
+- Save before teleport when the player changes server.
+- Keep test data separate from live data.
+- Use retry on save failure.
+
+### Practical Rules
+
+- Persistent data and session cache must stay separate.
+- Every saved field needs a default and a version path.
+- Every grant path needs an idempotency key.
+- No non-serializable state in saved data.
+- Open Cloud only when an external integration truly needs it.
+
+### Extra Output Focus
+
+- Mention schema version.
+- Mention load failure behavior.
+- Mention reconciliation behavior.
+- Mention duplicate-grant prevention.

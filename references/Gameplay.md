@@ -19,7 +19,7 @@
 
 ## Standards
 
-- Read `EngineerDeepin/References/ImplementationPatterns.md` when gameplay loop, combat, or round skeleton code is needed.
+- Read `references/ImplementationPatterns.md` when gameplay loop, combat, or round skeleton code is needed.
 - Use `Server Authority Gameplay` and `Round State Machine` patterns.
 - Server owns gameplay outcomes.
 - Separate rules from presentation.
@@ -108,3 +108,42 @@ end
 - Define action, reward, sink, save, and abuse case before code.
 - Keep visual feedback separate from server outcome.
 - Make the first 60 seconds understandable.
+
+## Deepin Merge
+
+### Scope Additions
+
+- Combat flow.
+- Hit validation.
+- Status effects.
+- RPG stats.
+- Progression layers.
+- Inventory rules.
+- Quest loops.
+- Reward pacing.
+
+### Extra Standards
+
+- Read the gameplay loop and round skeleton patterns before coding complex systems.
+- Server owns every meaningful outcome.
+- Presentation must stay separate from rules.
+- Keep the core loop visible in the first minute of play.
+- Balance source and sink so rewards do not inflate forever.
+- Keep item identifiers stable across updates.
+- Use legacy Humanoid fallback unless the modern avatar path is confirmed.
+
+### Practical Rules
+
+- Define the primary loop before extra features.
+- Define progression before cosmetics.
+- Define the first play session before late-game tuning.
+- Validate distance, state, and cooldown before damage.
+- Make reward grants idempotent.
+- Keep genre logic modular.
+
+### Extra Output Focus
+
+- Show the loop.
+- Show server authority.
+- Show reward and sink.
+- Show first playable skeleton.

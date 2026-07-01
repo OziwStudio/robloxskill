@@ -44,7 +44,7 @@ COLLECT --> UPGRADE --> UNLOCK ZONES --> PRESTIGE/REBIRTH
 
 ## 2. Architecture Blueprint
 
-Build on the base scaffold from `templates/game-scaffold.md`. The following extends it with simulator-specific modules.
+Build on the base scaffold from `Templates/GameTemplates/game-scaffold.md`. The following extends it with simulator-specific modules.
 
 ### Folder Structure
 
@@ -1551,3 +1551,4 @@ Simulator-specific items to verify before publishing. Check these in addition to
 - [ ] Pet LOD system activates correctly at distance thresholds.
 - [ ] StreamingEnabled is on. Zones load/unload without visible pop-in during normal play.
 - [ ] Memory usage stays stable over 30+ minutes of play (no leaks from pet spawning/despawning).
+

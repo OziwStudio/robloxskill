@@ -1,12 +1,10 @@
 # Systems
 
 ## Purpose
-
 - Use for common Roblox system blueprints and complete-system planning.
 - Use `ImplementationPatterns.md` when the blueprint needs to become script directly.
 
 ## System Blueprint
-
 1. Define owner.
 2. Define state.
 3. Define remotes.
@@ -17,7 +15,6 @@
 8. Define test plan.
 
 ## System Contract
-
 ```text
 System:
 Owner:
@@ -33,7 +30,6 @@ Tests:
 ```
 
 ## Common Systems
-
 - DataManager.
 - RemoteHandler.
 - CurrencyService.
@@ -47,7 +43,6 @@ Tests:
 - VFXController.
 
 ## Build Order
-
 1. Shared types and constants.
 2. Remotes.
 3. Server state and services.
@@ -57,7 +52,6 @@ Tests:
 7. Publish gates.
 
 ## Service Pattern
-
 - Server service owns state mutation.
 - Shared modules own types, constants, and pure helpers.
 - Client controller owns input, camera, local display, and UI intent.
@@ -65,7 +59,6 @@ Tests:
 - Data service persists only server-approved values.
 
 ## Example Remote Surface
-
 ```text
 Remotes/
   System_Action_RE      Client -> Server intent
@@ -74,19 +67,16 @@ Remotes/
 ```
 
 ## Example Folder Decision
-
 - Simple: one server script when isolated.
 - Moderate: `ReplicatedStorage/SystemName`, `ServerScriptService/SystemServer`, `StarterPlayerScripts/SystemClient`.
 - Complex: add `Services`, `Controllers`, `Handlers`, `Modules`, and `ConfigShared`.
 
 ## Template Integration
-
 - Use `TemplateBridge.md` for copied game templates.
 - Adapt template paths to Roblox Skill Pluz architecture rules.
 - Keep headers, footers, comments, debug, and version rules.
 
 ## Concrete Patterns
-
 - Module service: `ImplementationPatterns.md#Module Shape`.
 - Remote map: `ImplementationPatterns.md#Remote Map`.
 - Remote handler: `ImplementationPatterns.md#Remote Handler`.

@@ -1,14 +1,12 @@
 # Animation And VFX
 
 ## Purpose
-
 - Use for animation, VFX, SFX timing, particles, tweens, camera shake, cutscenes, abilities, combat feedback, and visual polish.
 - Read with `references/Performance.md` when effects may affect FPS, memory, mobile, or network replication.
 - Read with `Gameplay.md` when VFX represents gameplay feedback.
 - Read with `Security.md` when client VFX could be confused with server-owned outcomes.
 
 ## Priority
-
 1. Gameplay clarity.
 2. Performance safety.
 3. Cleanup.
@@ -16,7 +14,6 @@
 5. Visual polish.
 
 ## Animation Rules
-
 - Server owns gameplay result.
 - Client may play local animation feedback.
 - Do not let animation events grant damage, reward, currency, or inventory.
@@ -27,7 +24,6 @@
 - Keep legacy Humanoid fallback unless modern avatar controller is confirmed.
 
 ## VFX Rules
-
 - VFX is presentation, not authority.
 - Spawn frequent VFX locally when possible.
 - Replicate only the minimum event needed to show VFX.
@@ -38,7 +34,6 @@
 - Keep mobile and crowded servers first-class.
 
 ## Remote Pattern
-
 ```text
 Client -> Server:
   Ability_Cast_RE { AbilityId, AimPosition }
@@ -56,7 +51,6 @@ Clients:
 ```
 
 ## Effect Budget
-
 | Effect | Rule |
 |---|---|
 | Particles | bound rate and lifetime |
@@ -69,7 +63,6 @@ Clients:
 | Lights | avoid shadow-heavy spam |
 
 ## Cleanup Pattern
-
 ```luau
 --!strict
 
@@ -91,7 +84,6 @@ end
 ```
 
 ## Animation Marker Pattern
-
 ```luau
 --!strict
 
@@ -103,7 +95,6 @@ end
 ```
 
 ## Camera Shake Rule
-
 - Camera shake must be local.
 - Camera shake must have duration.
 - Camera shake must not permanently change camera mode.
@@ -111,7 +102,6 @@ end
 - Reduce shake on mobile and accessibility-sensitive modes.
 
 ## Audit Checklist
-
 - Does server own gameplay outcome?
 - Are animation markers trusted only as feedback?
 - Are VFX pooled or destroyed?
@@ -123,7 +113,6 @@ end
 - Can the player understand hit, miss, reward, or failure?
 
 ## Output Rule
-
 - For combat or ability systems, include animation/VFX flow.
 - For generated code, separate gameplay authority from visual feedback.
 - For audit, report unbounded VFX, leaked tracks, leaked sounds, and excessive replication.

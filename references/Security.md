@@ -19,7 +19,7 @@
 
 ## Standards
 
-- Read `EngineerDeepin/References/ImplementationPatterns.md` when validation, rate limit, or server authority code is needed.
+- Read `references/ImplementationPatterns.md` when validation, rate limit, or server authority code is needed.
 - Use `Payload Validation`, `Rate Limiter`, `Remote Handler`, and `Server Authority Gameplay` patterns.
 - Assume client is modified.
 - Assume payload is malicious.
@@ -113,3 +113,38 @@ end
 - Start by naming the exploit path.
 - Patch authority before UI.
 - Never allow client to directly grant, price, damage, or complete.
+
+## Deepin Merge
+
+### Scope Additions
+
+- Trust boundary.
+- Remote hardening.
+- Economy security.
+- Trading security.
+- Duplication prevention.
+- Vulnerability audit.
+
+### Extra Standards
+
+- Read the validation, rate limit, and server authority patterns before writing exploit fixes.
+- Assume malicious payloads and spammed remotes.
+- Validate value, ownership, range, state, cooldown, and transaction.
+- Server owns every valuable state.
+- Anti-cheat is support, not replacement, for authority.
+- Never trust client currency, inventory, damage, or reward.
+- Never expose cloud credentials.
+
+### Practical Rules
+
+- Treat every remote as a public endpoint.
+- Deny invalid input without creating noisy side effects.
+- Log repeated suspicious abuse, not every ordinary failure.
+- Prefer resetting impossible state over immediate kick.
+
+### Extra Output Focus
+
+- Start with exploit path.
+- Show required checks.
+- Show server-owned state.
+- Show regression test target.
