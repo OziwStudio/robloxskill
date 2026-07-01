@@ -2,6 +2,11 @@
 
 ## Purpose
 - Use for GUI, HUD, shop, inventory, mobile, gamepad, UI state, UX review, art direction, style language, and visual polish.
+- Use for menus, overlays, world-attached UI, notifications, dialogs, and feedback surfaces.
+- Treat UI as presentation and intent only.
+- Keep gameplay authority on the server.
+- Use for UI architecture, UX engineering, reactive UI frameworks, responsive design, animation systems, and production-grade interface development.
+- UI should be useful for players and maintainable for developers.
 
 ## UI Rules
 - Before generating UI, ask:
@@ -25,16 +30,193 @@
 - Avoid popup spam.
 - UI must have a clear art direction before colors and decoration.
 - Generated UI must avoid generic AI UI slop.
+- Use `Activated` for interactive buttons.
+- Use semantic names for script-bound objects only.
+- Separate UI creation from UI control when the project is not tiny.
+- Use the smallest UI architecture that keeps the contract clear.
+- Prefer reusable UI systems over one-off screens when the project will grow.
+- Keep UI state ownership explicit.
+- Keep UI logic separate from gameplay logic.
+
+## GUI Hierarchy
+
+- `ScreenGui` for 2D overlays.
+- `SurfaceGui` for world surfaces.
+- `BillboardGui` for floating 3D UI.
+- `ViewportFrame` for item or character previews.
+- `StarterGui` for UI templates.
+- `PlayerGui` for runtime UI.
+
+Rules:
+- persistent UI should not reset on respawn unless intended
+- world-attached UI should stay readable and bounded
+- 3D-attached UI should have a clear distance limit
+- runtime UI should have clear ownership and cleanup
+
+## Core Elements
+
+- `Frame` for containers
+- `TextLabel` for display text
+- `TextButton` for clickable text actions
+- `ImageLabel` for static icons
+- `ImageButton` for clickable icons
+- `ScrollingFrame` for lists and grids
+
+Rules:
+- keep base containers simple
+- avoid unreadable text over noisy backdrops
+- keep icon assets clean and padded
+- prefer purpose-specific names in logic binding
+- keep interactive elements obvious
+- keep label text short where space is limited
+
+## Layout Systems
+
+- `UIListLayout` for menus and vertical stacks
+- `UIGridLayout` for shops and inventories
+- `UIPageLayout` for tabs and onboarding flows
+- `UIPadding` for spacing
+- `UICorner` for rounded corners
+- `UIStroke` for outlines
+- `UIGradient` for controlled visual depth
+- `UISizeConstraint` for min/max bounds
+- `UIAspectRatioConstraint` for locked ratios
+
+Rules:
+- scale first, offset second
+- use automatic sizing only with limits
+- keep thumb reach in mind
+- avoid hardcoded pixel layout for main panels
+- keep layout constraints bounded
+- keep hierarchy easy to scan
+
+## Responsive Design
+
+- use `Scale` for main sizing and positioning
+- use `Offset` only for small fixed details
+- keep mobile readable
+- keep desktop dense but not crowded
+- adapt to portrait and landscape
+
+Rules:
+- if the screen is small, the UI should simplify
+- if the screen is wide, the UI should not stretch into emptiness
+- safe areas matter
+- text must remain legible on phone-sized screens
+- support portrait and landscape without breaking hierarchy
+- keep tablet layouts readable and not oversized
+
+## Animation and Motion
+
+- use `TweenService` for smooth transitions
+- use motion for feedback, reward, transition, or attention
+- do not animate everything at once
+- keep durations short
+
+Rules:
+- entrance motion should feel intentional
+- exit motion should feel clean
+- looping motion should be restrained
+- camera and UI motion must not fight each other
+- motion should clarify state change
+- transitions should support feedback, not distract from it
+
+## Input and Interaction
+
+- use `GuiButton.Activated` for cross-platform clicks
+- use `UserInputService` for raw input
+- use `ContextActionService` when automatic mobile buttons are needed
+- keep world interaction and UI interaction separate
+
+Rules:
+- `gameProcessedEvent` should be respected
+- UI should not block gameplay unintentionally
+- mobile and gamepad users need a valid path
+- keep interaction affordance clear
+- keep confirm/cancel paths obvious
+
+## Common UI Flows
+
+- shop: clear value and clear price
+- inventory: search, filter, capacity, item detail
+- health bar: readable and bounded
+- notification: short and auto-dismiss
+- dialog: explicit confirm and cancel
+- HUD: always legible, never noisy
+- toasts should stack and dismiss cleanly
+- dialogs should always expose a clear confirm and cancel path
+- HUD should show state without taking over the whole screen
+- live-service UI should communicate status, progress, and reward clearly
+- progress UI should always show current goal and next step
+
+## World-Attached UI
+
+- use `BillboardGui` for nametags, damage numbers, and quest markers
+- use `SurfaceGui` for signs, screens, and panels
+- keep 3D UI readable from expected distance
+- do not overload the scene with floating UI noise
+
+## Viewport Previews
+
+- use `ViewportFrame` for 3D previews in 2D UI
+- preview models should be isolated and framed well
+- item previews should not interfere with gameplay authority
+
+## Accessibility
+
+- text should be readable
+- contrast should be strong
+- interactive elements should be tappable
+- UI should remain usable without perfect precision
+- reduced motion should be possible when needed
+- contrast should support readability in play and on mobile
+- interactions should remain usable without precise aiming
+
+## Pooling and Cleanup
+
+- pool repeated UI when useful
+- destroy temporary UI when done
+- disconnect UI events on close or destroy
+- do not create UI every frame
+- keep UI lifecycle tied to ownership
+- avoid orphaned UI after close or respawn
+
+## Performance
+
+- keep UI creation bounded
+- avoid huge local scripts doing everything
+- keep gradients, shadows, and strokes under control
+- reduce effect complexity on low-end devices
+- keep notification stack capped
+- prefer a single themed style per screen
+- use fewer layers when a clean layout is enough
+- keep layout computation bounded
+- avoid excessive redraws or reactive churn
+
+## Style Patterns
+
+- Cartoon shop: bold outline, warm CTA, large art, rarity border.
+- Stylized RPG inventory: textured panels, readable stats, category tabs.
+- Realistic tactical HUD: muted colors, minimal decoration, high contrast.
+- Glassy music/social UI: translucent panels, thin strokes, restrained glow.
+- Horror objective UI: sparse, low saturation, strong contrast.
+- Arcade results UI: reward burst, bold score, medal hierarchy.
+- Minimal quest UI: sparse, direct, status-first.
+- Live-service event UI: reward emphasis, countdown clarity, easy dismissal.
 
 ## Art Direction
+
 - Pick one style family: `Cartoon`, `Stylized`, `Realistic`, `Glossy`, `Glassy`, `Minimal`, `Arcade`, or `Horror`.
 - Match the style to genre, audience, and game economy.
 - Define material language: flat, glossy, glassy, textured, outlined, metallic, paper, stone, neon, or toy-like.
 - Define visual anchors: avatar, item preview, currency, progress, map, quest, reward, or selected action.
 - Define icon plan before building dense UI.
 - Use motion only for feedback, reward, transition, or attention.
+- Choose art direction before building the screen.
+- Keep one style family per surface.
 
 ## Anti-Slop Rules
+
 - No default purple-blue gradient unless requested by genre.
 - No repeated identical cards without hierarchy.
 - No decorative blobs or meaningless background shapes.
@@ -43,8 +225,14 @@
 - No tiny text on mobile.
 - No CTA hidden among equal buttons.
 - No unbounded animations.
+- No hidden hierarchy.
+- No unreadable text on mobile.
+- No mismatched style family inside one surface.
+- No decorative clutter without function.
+- No hero-level treatment on compact utility panels.
 
 ## Layout
+
 - Prefer scale and constraints.
 - Use `UIScale`, `UISizeConstraint`, `UIAspectRatioConstraint`.
 - Use `UIListLayout`, `UIGridLayout`, `UIPadding`.
@@ -54,23 +242,169 @@
 - Use `AutomaticSize` only with clear bounds.
 - Prevent alpha bleeding in icon assets with pixel padding before upload.
 - Disable `AutoLocalize` for brand names, fantasy terms, and special names when translation would corrupt meaning.
+- Use nested frames only when they clarify structure.
+- Keep the root hierarchy easy to scan.
+- Keep the UI tree predictable for future edits.
+- Keep reusable layout patterns consistent across screens.
 
 ## Patterns
+
 - Shop: clear value, clear price, no deceptive prompt.
 - Health bar: readable, animated but bounded.
 - Notification: short, stack-limited, auto-dismiss.
 - Dialog: explicit confirm/cancel.
 - Inventory: filtering, search, capacity, item details.
+- a shop should expose value before asking for payment
+- a health bar should reflect current and trailing damage cleanly
+- a notification should be short, visible, and dismiss itself
+- a dialog should not trap the player without a cancel path
+- an inventory should support browsing and comparison
+- a live-service screen should show status, reward, and next action
+- a dialog should make the safest choice obvious
 
-## Style Patterns
-- Cartoon shop: bold outline, warm CTA, large item art, rarity border.
-- Stylized RPG inventory: textured panels, item silhouettes, category tabs, readable stats.
-- Realistic tactical HUD: muted colors, minimal decoration, high contrast alerts.
-- Glassy music/social UI: translucent panels, thin strokes, restrained glow, album/queue focus.
-- Horror objective UI: sparse layout, low saturation, strong contrast, slow reveal.
-- Arcade results UI: bold score, reward burst, medal/badge hierarchy, short celebratory motion.
+## UI System Rules
+
+- UI communicates state
+- UI sends intent only
+- server owns outcome
+- UI should adapt to player input method
+- UI should not act like game logic
+- UI should present state, not invent state
+- UI should keep user intent clear
+
+## UI Architecture
+- Build scalable component systems.
+- Reuse components across screens.
+- Keep duplicated UI logic out of separate screens.
+- Keep design language unified.
+- Keep the hierarchy modular.
+
+## Design System Engineering
+- Define typography standards.
+- Define color systems.
+- Define spacing systems.
+- Define layout systems.
+- Define component libraries.
+- Keep visual consistency across the project.
+
+## Information Hierarchy
+- Put the most important information first.
+- Make action affordance obvious.
+- Make reward and progress easy to read.
+- Make the next step easy to find.
+- Remove competing visual noise.
+
+## UX Engineering
+- Analyze user flow.
+- Analyze interaction flow.
+- Analyze navigation flow.
+- Remove friction where possible.
+- Avoid unnecessary complexity.
+- Make every action feel intuitive.
+
+## State Management
+- Decide who owns state.
+- Decide who updates state.
+- Decide who consumes state.
+- Keep UI state separate from gameplay state.
+- Keep local, shared, and global state distinct.
+
+## Live Service Interface Design
+- Support daily rewards.
+- Support battle passes.
+- Support events.
+- Support shops.
+- Support progression systems.
+- Keep long-term content updates readable.
+
+## Inventory UI Systems
+- Support equipment screens.
+- Support item management.
+- Support filtering.
+- Support search.
+- Keep usability high as inventory grows.
+
+## Shop UI Systems
+- Present products clearly.
+- Keep conversion flow clear.
+- Keep purchase clarity high.
+- Avoid deceptive UI.
+- Build trust through obvious pricing.
+
+## Quest UI Systems
+- Keep objectives visible.
+- Keep reward visible.
+- Keep progress visible.
+- Keep the current task easy to understand.
+
+## UI Review Framework
+### Usability
+- Is it easy to use?
+
+### Readability
+- Is the information easy to understand?
+
+### Accessibility
+- Can users comfortably interact with it?
+
+### Maintainability
+- Can developers maintain it?
+
+### Scalability
+- Can it grow with the project?
+
+## UI Audit Format
+```text
+[ui_strengths]
+[ui_issues]
+[ux_issues]
+[recommendations]
+[priority]
+```
+
+## Final Verification
+- Information hierarchy is clear.
+- User flow is intuitive.
+- Components are reusable.
+- UI architecture is scalable.
+- State management is organized.
+- Accessibility is considered.
+- Responsive design is supported.
+- UI performance is optimized.
+- Design consistency is maintained.
+- Future expansion is supported.
+
+## Technical Leadership
+- Think like a principal UI engineer.
+- Think like a UX engineer.
+- Think like a design systems architect.
+- Evaluate interface quality by user impact and engineering quality.
+- Do not judge only by visual appearance.
+
+## Communication Style
+- Be analytical.
+- Be technical.
+- Be user-focused.
+- Be objective.
+- Support conclusions with UI and UX reasoning.
+- Avoid subjective design opinions without justification.
+
+## Final Objective
+- Design, review, optimize, and scale modern Roblox interfaces.
+- Build production-grade UI systems, design systems, and user experiences.
+- Follow modern Roblox engineering standards.
+- Support long-term live-service development.
+
+## Support Questions
+
+- Ask whether the UI already exists or should be generated.
+- Ask whether generator logic should be merged or separated.
+- Ask whether the UI should be created from scratch or adapted.
+- Ask whether the UI needs mobile, gamepad, or desktop first.
+- Ask whether the style should be cartoon, stylized, realistic, glossy, glassy, minimal, arcade, or horror.
 
 ## Performance
+
 - Do not create UI every frame.
 - Pool repeated UI when needed.
 - Disconnect UI events on close/destroy.
@@ -81,6 +415,7 @@
 - Use simplified UI effects on low-end devices.
 
 ## Anti-Patterns
+
 - Hardcoded layout.
 - Cluttered screens.
 - Hidden information.
@@ -90,3 +425,21 @@
 - Generic AI-looking layout.
 - Style with no gameplay identity.
 - Excessive glass, glow, gradient, or rounded card repetition.
+- UI created without naming contract.
+- Mixed style families in one surface.
+- Decorative clutter with no function.
+- UI that ignores safe areas or touch reach.
+- Unbounded animation or notification spam.
+
+## Audit Checklist
+
+- Does the UI communicate state clearly?
+- Does the UI stay readable on mobile?
+- Are buttons cross-platform?
+- Are script-bound object names semantic?
+- Is the art direction consistent?
+- Is the hierarchy easy to scan?
+- Are layout constraints bounded?
+- Are animations short and intentional?
+- Are UI connections cleaned up?
+- Does the UI avoid AI slop?

@@ -4,6 +4,12 @@
 - Use for system boundaries, placement, ownership, lifecycle, module shape, and require rules.
 - This is the single architecture reference for Basic and Deepin.
 
+## Data Model
+- Roblox is a tree of Instances rooted at `game`.
+- Instance location changes behavior and visibility.
+- A script runs only where its container and type allow it.
+- The hierarchy is part of the architecture, not just storage.
+
 ## Classifier
 - Classify each request as `Simple`, `Moderate`, or `Complex`.
 - `Simple`: one direct isolated script.
@@ -18,6 +24,13 @@
 - `StarterGui`: GUI templates.
 - `ServerStorage`: private assets and templates.
 - `Workspace`: live world only.
+
+## Replication Model
+- Server to clients: `Workspace`, `ReplicatedStorage`, `ReplicatedFirst`, `Lighting`, `SoundService`, `Chat`, `Teams`.
+- Server only: `ServerScriptService`, `ServerStorage`.
+- Per-player: `PlayerGui`, `PlayerScripts`, `Backpack`, `StarterGear` after cloning.
+- Client-created objects stay local unless the server replicates them.
+- If the server changes a replicated instance, clients should see it.
 
 ## Layout
 ```text
@@ -40,6 +53,57 @@ StarterPlayerScripts/
     UI/
 ```
 
+## Service Hierarchy
+
+### ServerScriptService
+- server game logic
+- data persistence
+- validation
+- anti-cheat
+- NPC and AI controllers
+
+### ServerStorage
+- private maps
+- templates
+- server-only modules
+- assets the client should never see
+
+### ReplicatedStorage
+- shared modules
+- remotes
+- shared assets
+- shared types and constants
+
+### ReplicatedFirst
+- loading screen
+- early client bootstrap
+- minimal pre-load logic
+
+### StarterGui
+- HUD
+- menus
+- UI templates
+
+### StarterPlayerScripts
+- input
+- camera
+- client managers
+- persistent client systems
+
+### StarterCharacterScripts
+- character-only behavior
+- per-life effects
+- reset-on-death logic
+
+### StarterPack
+- default tools
+- starting items
+
+### Workspace
+- live world only
+- no server logic
+- no script dumping
+
 ## File Types
 - `.luau` is the main extension.
 - `.lua` is secondary.
@@ -56,6 +120,12 @@ StarterPlayerScripts/
 - `Start()` connects events and begins runtime work.
 - `Destroy()` disconnects and clears state.
 - Prefer dependency injection when modules can cycle.
+
+## Framework Choice
+- Use plain modules when the system is small or isolated.
+- Use a framework only when lifecycle, networking, or team scale actually needs it.
+- Keep architecture simpler than the problem whenever possible.
+- Do not add a framework just because it looks professional.
 
 ## Server Entry
 ```lua
@@ -138,6 +208,14 @@ return Module
 - Validate state.
 - Validate permission.
 
+## Module Patterns
+- One module, one responsibility.
+- Shared modules should stay pure when possible.
+- Server modules should not be placed where clients can read them.
+- Use `init()` or `Start()` to break circular dependencies.
+- Use dependency inversion when two modules want each other.
+- Use events for decoupling instead of direct back-and-forth requires.
+
 ## System Patterns
 - Start from classifier.
 - Build file tree first.
@@ -148,6 +226,20 @@ return Module
 - Use remotes only for client-server boundary.
 - Avoid god scripts and hidden dependencies.
 - Avoid circular requires.
+- Keep the file tree readable before the code gets large.
+- Treat folder depth as a design decision.
+- Keep runtime authority on the server.
+
+## Anti-Patterns
+- God scripts.
+- Circular requires.
+- Server logic in replicated containers.
+- Scripts in Workspace.
+- Duplicated logic instead of shared modules.
+- Trusting client data.
+- Polling instead of events.
+- Overusing RemoteFunction.
+- Ignoring the `task` library.
 
 ## Outputs
 - For `!genfull`, output class and file tree first.
@@ -167,3 +259,8 @@ Allowed:
 Not Allowed:
   InventoryService -> ShopService -> InventoryService
 ```
+
+## Output Rule
+- For new systems, explain where code lives before showing code.
+- For refactors, mention boundary changes before implementation.
+- For framework decisions, prefer the smallest workable option.

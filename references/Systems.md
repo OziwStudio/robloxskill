@@ -2,7 +2,7 @@
 
 ## Purpose
 - Use for common Roblox system blueprints and complete-system planning.
-- Use `ImplementationPatterns.md` when the blueprint needs to become script directly.
+- Use `references/bridges/ImplementationPatterns.md` when the blueprint needs to become script directly.
 
 ## System Blueprint
 1. Define owner.
@@ -77,7 +77,7 @@ Remotes/
 - Keep headers, footers, comments, debug, and version rules.
 
 ## Concrete Patterns
-- Module service: `ImplementationPatterns.md#Module Shape`.
-- Remote map: `ImplementationPatterns.md#Remote Map`.
-- Remote handler: `ImplementationPatterns.md#Remote Handler`.
-- Data schema: `ImplementationPatterns.md#Profile Schema`.
+- Module service: `references/bridges/ImplementationPatterns.md#Module Shape`.
+- Remote map: `references/bridges/ImplementationPatterns.md#Remote Map`.
+- Remote handler: `references/bridges/ImplementationPatterns.md#Remote Handler`.
+- Data schema: `references/bridges/ImplementationPatterns.md#Profile Schema`.

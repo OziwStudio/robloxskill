@@ -39,7 +39,7 @@
 | `Focused` | small fix, explanation, snippet | read one reference or specialist |
 | `System` | feature or multi-file system | route Architecture + domain specialists |
 | `Critical` | data, security, monetization, exploit, publish | route Reviewer + Security/Data/Performance |
-| `Studio` | complete game, template, MCP, live-service | route CompleteGameLayer + templates + gates |
+| `Studio` | complete game, template, MCP, live-service | route GameDesign + templates + gates |
 
 ## Risk Matrix
 | Risk | Required Gate |
@@ -52,7 +52,7 @@
 | Mesh-heavy map or mobile FPS | MeshFidelityLOD + Performance |
 | Chat, UGC, ads, youth audience | CommunitySafety2026 + Security |
 | Modern Roblox API | ModernRoblox + stable fallback |
-| Full game | CompleteGameLayer + TemplateCatalog + ProductionGates |
+| Full game | GameDesign + TemplateBridge + Production |
 
 ## Specialists
 | Specialist | Use for |
@@ -84,23 +84,23 @@
 | `Reviewer` | `references/Reviewer.md` |
 
 ## Manifest Files
-- Specialist completeness: `references/SpecialistManifest.md`.
-- Template completeness: `references/TemplateCatalog.md`.
-- Concrete code patterns: `references/ImplementationPatterns.md`.
-- Animation and VFX: `references/AnimationVFX.md`.
-- Mesh fidelity and LOD: `references/MeshFidelityLOD.md`.
-- Community safety 2026: `references/CommunitySafety2026.md`.
+- Specialist completeness: `references/bridges/SpecialistManifest.md`.
+- Template completeness: `Templates/GameTemplates/`.
+- Concrete code patterns: `references/bridges/ImplementationPatterns.md`.
+- Animation and VFX: `references/other/AnimationVFX.md`.
+- Mesh fidelity and LOD: `references/other/MeshFidelityLOD.md`.
+- Community safety 2026: `references/other/CommunitySafety2026.md`.
 
 ## Core References
 | Need | Read |
 |---|---|
-| Specialist routing | `references/AdoptedRouter.md` |
-| Implementation examples | `references/ImplementationPatterns.md` |
-| Production gates | `references/ProductionGates.md` |
-| Complete games | `references/CompleteGameLayer.md` |
-| Modern APIs | `references/ModernRoblox.md` |
-| Template games | `references/TemplateBridge.md` + `references/TemplateCatalog.md` |
-| QA and testing | `references/TestingQA.md` |
+| Specialist routing | `references/bridges/Router.md` |
+| Implementation examples | `references/bridges/ImplementationPatterns.md` |
+| Production gates | `references/Production.md` |
+| Complete games | `references/other/GameDesign.md` |
+| Modern APIs | `references/other/ModernRoblox.md` |
+| Template games | `references/bridges/Templates-bridge.md` + `Templates/GameTemplates/` |
+| QA and testing | `references/other/TestingQA.md` |
 
 ## Activation Rules
 - `!bugfix`: activate Luau + Reviewer, add domain specialist if needed.
@@ -111,7 +111,7 @@
 - `!deepin`: activate Deepin router and production gates.
 - `!modernapi`: activate `references/Architecture.md` + Reviewer + relevant domain specialists.
 - `!gamefull`: activate Architecture + Gameplay + Data + Networking + Security + Performance + UIUX + Reviewer.
-- `!template`: read TemplateBridge, TemplateCatalog, and one matching bundled template.
+- `!template`: read TemplateBridge and one matching bundled template.
 - `!testplan`: activate Reviewer + Luau + relevant domain specialists.
 - `!mcp-mode`: use StudioModes.
 - Code generation with concrete examples: read ImplementationPatterns.
@@ -245,8 +245,8 @@
 
 ## Support With
 - `None`: do not read support files.
-- `Management Project`: read `Supports/ProjectManagement.md`.
-- `Framework`: read `Supports/Framework.md`.
+- `Management Project`: read `references/supports/ProjectManagement.md`.
+- `Framework`: read `references/supports/Framework.md`.
 - Support is not learned by default.
 - Do not mention inactive support unless user asks.
 
@@ -378,23 +378,23 @@
 | `!deepin` | Activate Deepin and read `Engineer/DeepinEngineer.md`. |
 | `!Deepin` | Alias for `!deepin`. |
 | `!read-deepin` | Read Deepin core only. |
-| `!read-deepin-router` | Read `references/AdoptedRouter.md`. |
-| `!read-workflow` | Read `references/WorkflowPlaybooks.md`. |
-| `!read-gates` | Read `references/ProductionGates.md`. |
-| `!read-complete-game` | Read `references/CompleteGameLayer.md`. |
+| `!read-deepin-router` | Read `references/bridges/Router.md`. |
+| `!read-workflow` | Read `references/bridges/WorkflowPlaybooks.md`. |
+| `!read-gates` | Read `references/Production.md`. |
+| `!read-complete-game` | Read `references/other/GameDesign.md`. |
 | `!read-studio-modes` | Read `references/StudioModes.md`. |
-| `!read-template-bridge` | Read `references/TemplateBridge.md`. |
-| `!read-template-catalog` | Read `references/TemplateCatalog.md`. |
-| `!read-testing` | Read `references/TestingQA.md`. |
-| `!read-design` | Read `references/GameDesignLiveOps.md`. |
-| `!read-monetization` | Read `references/MonetizationAndEconomy.md`. |
-| `!read-genre` | Read `references/GenrePlaybooks.md`. |
-| `!read-modern` | Read `references/ModernRoblox.md`. |
-| `!read-animation-vfx` | Read `references/AnimationVFX.md`. |
-| `!read-specialists` | Read `references/SpecialistManifest.md`. |
-| `!read-patterns` | Read `references/ImplementationPatterns.md`. |
-| `!read-mesh-lod` | Read `references/MeshFidelityLOD.md`. |
-| `!read-safety2026` | Read `references/CommunitySafety2026.md`. |
+| `!read-template-bridge` | Read `references/bridges/Templates-bridge.md`. |
+| `!read-template-catalog` | Read `Templates/GameTemplates/`. |
+| `!read-testing` | Read `references/other/TestingQA.md`. |
+| `!read-design` | Read `references/other/GameDesign.md`. |
+| `!read-monetization` | Read `references/other/MonetizationAndEconomy.md`. |
+| `!read-genre` | Read `references/other/GameDesign.md`. |
+| `!read-modern` | Read `references/other/ModernRoblox.md`. |
+| `!read-animation-vfx` | Read `references/other/AnimationVFX.md`. |
+| `!read-specialists` | Read `references/bridges/SpecialistManifest.md`. |
+| `!read-patterns` | Read `references/bridges/ImplementationPatterns.md`. |
+| `!read-mesh-lod` | Read `references/other/MeshFidelityLOD.md`. |
+| `!read-safety2026` | Read `references/other/CommunitySafety2026.md`. |
 
 ## Engineer
 | Command | Action |
@@ -442,7 +442,7 @@
 | `!newgame` | New game planning workflow. |
 | `!modernapi` | Check modern Roblox API path, confidence, and fallback. |
 | `!gamefull` | Build complete game plan with design, scaffold, systems, tests, and launch gates. |
-| `!template` | Use `TemplateBridge`, `TemplateCatalog`, and one matching template only. |
+| `!template` | Use `TemplateBridge` and one matching template only. |
 | `!testplan` | Create QA, regression, smoke, and manual testing plan. |
 | `!sharpedges` | Check the 12 common Roblox production footguns. |
 | `!mcp-mode` | Detect Full, Standard, or Offline Studio mode. |
@@ -489,13 +489,13 @@
 - `vulnfix`: read security and gates.
 - `publish`: read workflow and gates.
 - `monetization`: read workflow, data, security.
-- `gamefull`: read CompleteGameLayer, TemplateBridge, TemplateCatalog, GameDesignLiveOps, TestingQA.
-- `template`: read TemplateBridge, TemplateCatalog, and one matching `Templates/` file if present.
+- `gamefull`: read GameDesign, TemplateBridge, TestingQA.
+- `template`: read TemplateBridge and one matching `Templates/` file if present.
 - `testing`: read TestingQA.
-- `sharpedges`: read ProductionGates.
+- `sharpedges`: read Production.
 - `mcp`: read StudioModes.
-- `ftue`: read GameDesignLiveOps.
-- `retention`: read GameDesignLiveOps.
+- `ftue`: read GameDesign.
+- `retention`: read GameDesign.
 - `modernapi`: read ModernRoblox and verify API confidence.
 - `opencloud`: read ModernRoblox, data, security.
 - `liveops`: read ModernRoblox and data.
@@ -522,6 +522,10 @@
 - `server-authority`: read ImplementationPatterns, Gameplay, Security.
 
 
+# Routing of Deepin
+isi ini!
+
+
 # ChatOutput of Deepin
 
 ## First Intro
@@ -531,9 +535,8 @@ I have studied and am ready to put it into practice.
 
 List of commands:
 ------------------------------------
-`!basic` | Switch enginer to the Deepin
-`!deepin` | Switch enginer to the Deepin
-`!read-deepin` <<--hapus command ini>>
+`!basic` | Switch engineer to the Basic
+`!deepin` | Switch engineer to the Deepin
 ------------------------------------
 `!memorize-read-once` | `!memorize-auto-context`
 `!readall` | `!read-core` | `!read-settings` | `!read-rules` 
@@ -549,7 +552,13 @@ List of commands:
 `!genfull` | `!gensnip` | `!refactor`
 ------------------------------------
 
-<<berikan tambahan commands yg tersedia di deepin>>
+`!read-deepin-router` | `!read-workflow` | `!read-gates` | `!read-complete-game`
+`!read-studio-modes` | `!read-template-bridge` | `!read-template-catalog`
+`!read-testing` | `!read-design` | `!read-monetization` | `!read-genre`
+`!read-modern` | `!read-animation-vfx` | `!read-specialists`
+`!read-patterns` | `!read-mesh-lod` | `!read-safety2026`
+`!review` | `!perfcheck` | `!publishcheck`
+`!modernapi` | `!gamefull` | `!template` | `!testplan` | `!mcp-mode`
 
 ## Every End Off Conversation
 {ai responses}
@@ -558,5 +567,5 @@ List of commands:
 `!bugfix` | `!vulnfix`
 `!genfull` | `!gensnip` | `!refactor`
 ------------------------------------
-`!basic` | Switch enginer to the Deepin
+`!basic` | Switch engineer to the Basic
 ------------------------------------

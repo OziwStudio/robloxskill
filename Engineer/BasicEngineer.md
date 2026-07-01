@@ -43,9 +43,9 @@
 
 ## Support With
 - `None`: default, no optional support loaded.
-- `Management Project`: load `Supports/ProjectManagement.md`.
+- `Management Project`: load `references/supports/ProjectManagement.md`.
 - `Project Management`: same as `Management Project`.
-- `Framework`: load `Supports/Framework.md`.
+- `Framework`: load `references/supports/Framework.md`.
 
 ## Support Rules
 - Ask user to choose support when installing or adding this skill.
@@ -243,15 +243,15 @@ MainScript/
 | `!read-uiux` | Read `references/UIUX.md`. |
 | `!read-performance` | Read `references/Performance.md`. |
 | `!read-gameplay` | Read `references/Performance.md` gameplay section. |
-| `!read-support-framework` | Read `Supports/Framework.md`. |
+| `!read-support-framework` | Read `references/supports/Framework.md`. |
 
 ## Skill Support
 | Command | Rule |
 |---|---|
 | `!support-list` | Show optional support choices only. |
 | `!support-none` | Keep optional support disabled. |
-| `!support-management-project` | Activate Management Project support and read `Supports/ProjectManagement.md`. |
-| `!support-framework` | Activate Framework support and read `Supports/Framework.md`. |
+| `!support-management-project` | Activate Management Project support and read `references/supports/ProjectManagement.md`. |
+| `!support-framework` | Activate Framework support and read `references/supports/Framework.md`. |
 | `!support-off` | Disable optional support. |
 
 ## Memorize
@@ -312,6 +312,11 @@ MainScript/
 - `Engineer: Basic` is the only default mode visible here.
 - If user asks for Deepin, hand off to `Engineer/DeepinEngineer.md`.
 
+
+# Routing of Basic
+isi ini!
+
+
 # ChatOutput of Basic
 
 ## First Intro
@@ -321,9 +326,8 @@ I have studied and am ready to put it into practice.
 
 List of commands:
 ------------------------------------
-`!basic` | Switch enginer to the Deepin
-`!deepin` | Switch enginer to the Deepin
-`!read-deepin` <<--hapus command ini>>
+`!basic` | Switch engineer to the Basic
+`!deepin` | Switch engineer to the Deepin
 ------------------------------------
 `!memorize-read-once` | `!memorize-auto-context`
 `!readall` | `!read-core` | `!read-settings` | `!read-rules` 
@@ -356,6 +360,6 @@ Describe the Roblox system you want to build directly
 `!bugfix` | `!vulnfix`
 `!genfull` | `!gensnip` | `!refactor`
 ------------------------------------
-`!deepin` | Switch enginer to the Deepin
+`!basic` | Switch engineer to the Basic
+`!deepin` | Switch engineer to the Deepin
 ------------------------------------
-

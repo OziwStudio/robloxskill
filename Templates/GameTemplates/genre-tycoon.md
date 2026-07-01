@@ -1411,7 +1411,7 @@ Each prestige should feel faster than the previous one due to the multiplier, bu
 
 ## 5. Monetization Strategy
 
-For complete implementation details, load `references/MonetizationAndEconomy.md`.
+For complete implementation details, load `references/OtherReferences/MonetizationAndEconomy.md`.
 
 ### GamePasses (One-Time, Permanent)
 

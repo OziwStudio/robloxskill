@@ -78,23 +78,22 @@ Read only when needed by task or command.
 Read only when Deepin is active and needed.
 | File | Read when |
 |---|---|
-| `references/AdoptedRouter.md` | specialist routing and adopted strengths |
-| `references/WorkflowPlaybooks.md` | debug, audit, publish, monetization workflows |
-| `references/ProductionGates.md` | sharp edges and final gates |
-| `references/CompleteGameLayer.md` | complete Roblox game routing and launch layer |
+| `references/bridges/Router.md` | specialist routing and adopted strengths |
+| `references/bridges/WorkflowPlaybooks.md` | debug, audit, publish, monetization workflows |
+| `references/Production.md` | sharp edges and final gates |
+| `references/other/GameDesign.md` | complete Roblox game routing and launch layer |
 | `references/StudioModes.md` | Studio MCP/full/standard/offline behavior |
-| `references/TemplateBridge.md` | bundled `Templates/` bridge |
-| `references/TemplateCatalog.md` | ready genre template catalog |
-| `references/SpecialistManifest.md` | 10 separate Deepin specialist manifest |
-| `references/ImplementationPatterns.md` | concrete Luau, remote, data, security, gameplay code patterns |
-| `references/TestingQA.md` | testing, QA, regression, smoke, and CI guidance |
-| `references/GameDesignLiveOps.md` | FTUE, retention, social, difficulty, update strategy |
-| `references/MonetizationAndEconomy.md` | purchase safety, pricing, economy, monetization ethics |
-| `references/GenrePlaybooks.md` | genre-specific Roblox patterns |
-| `references/ModernRoblox.md` | modern Roblox API confidence, Open Cloud, streaming, UI, avatar, LiveOps |
-| `references/AnimationVFX.md` | animation, VFX, SFX, camera shake, particles, tweens, visual feedback |
-| `references/MeshFidelityLOD.md` | RenderFidelity, CollisionFidelity, LevelOfDetail, mesh optimization |
-| `references/CommunitySafety2026.md` | community safety, youth audience, chat, UGC, ads, policy-sensitive systems |
+| `references/bridges/Templates-bridge.md` | bundled `Templates/` bridge |
+| `references/bridges/SpecialistManifest.md` | 10 separate Deepin specialist manifest |
+| `references/bridges/ImplementationPatterns.md` | concrete Luau, remote, data, security, gameplay code patterns |
+| `references/other/TestingQA.md` | testing, QA, regression, smoke, and CI guidance |
+| `references/other/GameDesign.md` | FTUE, retention, social, difficulty, update strategy |
+| `references/other/MonetizationAndEconomy.md` | purchase safety, pricing, economy, monetization ethics |
+| `references/other/GameDesign.md` | genre-specific Roblox patterns |
+| `references/other/ModernRoblox.md` | modern Roblox API confidence, Open Cloud, streaming, UI, avatar, LiveOps |
+| `references/other/AnimationVFX.md` | animation, VFX, SFX, camera shake, particles, tweens, visual feedback |
+| `references/other/MeshFidelityLOD.md` | RenderFidelity, CollisionFidelity, LevelOfDetail, mesh optimization |
+| `references/other/CommunitySafety2026.md` | community safety, youth audience, chat, UGC, ads, policy-sensitive systems |
 | `references/*.md` | Deepin specialist gates loaded by `Deepin: SpecialistName` |
 | `references/Architecture.md` | deep architecture |
 | `references/Networking.md` | deep networking |
@@ -110,8 +109,8 @@ Read only when Deepin is active and needed.
 - Default support state is off.
 - Ask user to choose support when adding this skill.
 - Support choices: `None`, `Management Project`, `Framework`.
-- Read `Supports/ProjectManagement.md` only when user activates Project Management support.
-- Read `Supports/Framework.md` only when user activates Framework support.
+- Read `references/supports/ProjectManagement.md` only when user activates Project Management support.
+- Read `references/supports/Framework.md` only when user activates Framework support.
 - Do not mention optional support in normal answers unless activated.
 
 ## Memorize Setting
@@ -128,9 +127,9 @@ Read only when Deepin is active and needed.
 - If the user asks for `Engineer: Deepin`, switch to the Deepin path.
 - If the user asks `Deepin: SpecialistName`, load that specialist focus.
 - Deepin specialists: `Luau`, `Architecture`, `Networking`, `Security`, `Performance`, `Data`, `Gameplay`, `UIUX`, `Framework`, `Reviewer`.
-- If the user asks `!modernapi`, read `references/ModernRoblox.md` and provide stable fallback.
+- If the user asks `!modernapi`, read `references/other/ModernRoblox.md` and provide stable fallback.
 - If the user asks `!gamefull`, read complete game references and bundled `Templates/` files.
-- If the user asks `!template`, read `references/TemplateBridge.md` and one matching bundled template.
+- If the user asks `!template`, read `references/bridges/Templates-bridge.md` and one matching bundled template.
 
 ## Bundled Templates
 These files are included in the root `Templates/` folder and are ready to use.
@@ -158,4 +157,3 @@ These files are included in the root `Templates/` folder and are ready to use.
 - Do not remove original credit.
 - Sharing edited copies back to Terla Community is appreciated as community collaboration.
 - See `LICENSE.md`.
-
