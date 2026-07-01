@@ -1552,3 +1552,5 @@ Simulator-specific items to verify before publishing. Check these in addition to
 - [ ] StreamingEnabled is on. Zones load/unload without visible pop-in during normal play.
 - [ ] Memory usage stays stable over 30+ minutes of play (no leaks from pet spawning/despawning).
 
+
+

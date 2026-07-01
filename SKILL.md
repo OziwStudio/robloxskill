@@ -159,5 +159,3 @@ These files are included in the root `Templates/` folder and are ready to use.
 - Sharing edited copies back to Terla Community is appreciated as community collaboration.
 - See `LICENSE.md`.
 
-
-

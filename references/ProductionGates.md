@@ -1,6 +1,7 @@
 # Production Gates
 
 ## Readiness
+
 | Level | Meaning |
 |---|---|
 | `Not Ready` | unsafe, incomplete, or likely to fail |
@@ -9,6 +10,7 @@
 | `Enterprise Ready` | scalable for large live-service growth |
 
 ## Hard Blocks
+
 - Client controls currency.
 - Client controls inventory.
 - Client controls rewards.
@@ -21,6 +23,7 @@
 - Connection leak grows forever.
 
 ## Sharp Edges
+
 - DataStore needs session locking for valuable data.
 - Client-side currency is forbidden.
 - ProcessReceipt must be idempotent.
@@ -37,6 +40,7 @@
 - Mobile part count and UI density matter.
 
 ## Sharp Edge Severity
+
 | Severity | Fix Before |
 |---|---|
 | `Critical` | shipping |
@@ -45,26 +49,31 @@
 | `Low` | convenient cleanup |
 
 ## Critical Sharp Edges
+
 - DataStore without session locking.
 - Client-side currency or rewards.
 - ProcessReceipt without idempotency.
 
 ## High Sharp Edges
+
 - Undisconnected event connections.
 - RemoteEvent flooding.
 - Sequential BindToClose saves.
 
 ## Medium Sharp Edges
+
 - Too many visible mobile parts.
 - Yielding in module body.
 - Nil gaps with `#table`.
 - Infinite yield from `WaitForChild`.
 
 ## Low Sharp Edges
+
 - Legacy `wait`, `spawn`, `delay`.
 - Regex syntax used as Luau pattern.
 
 ## Final Code Gate
+
 - Correct path.
 - Correct script type.
 - Correct require path.
@@ -78,6 +87,7 @@
 - Correct comment language.
 
 ## Security Gate
+
 - Validate type.
 - Validate range.
 - Validate ownership.
@@ -88,6 +98,7 @@
 - Never trust client result.
 
 ## Data Gate
+
 - Load safe.
 - Reconcile schema.
 - Migrate version.
@@ -97,6 +108,7 @@
 - Separate session state from persistent state.
 
 ## Performance Gate
+
 - Avoid busy loops.
 - Avoid unbounded tables.
 - Avoid repeated `GetDescendants` in hot paths.
@@ -110,6 +122,7 @@
 - Mobile map density is reviewed.
 
 ## Modern API Gate
+
 - Verify API availability.
 - Verify project settings.
 - Verify target platform.
@@ -120,6 +133,7 @@
 - Flag uncertain API as `Verify-Current`.
 
 ## Launch Gate
+
 - FTUE first action exists.
 - First reward exists.
 - Mobile manual test passes.

@@ -99,7 +99,7 @@
 | Production gates | `references/ProductionGates.md` |
 | Complete games | `references/CompleteGameLayer.md` |
 | Modern APIs | `references/ModernRoblox.md` |
-| Template games | `references/TemplateBridge.md` + `TemplateCatalog.md` |
+| Template games | `references/TemplateBridge.md` + `references/TemplateCatalog.md` |
 | QA and testing | `references/TestingQA.md` |
 
 ## Activation Rules
@@ -549,10 +549,6 @@ List of commands:
 `!genfull` | `!gensnip` | `!refactor`
 ------------------------------------
 
-Deepin: Off by default, activate with `!deepin`
-Generate focus default: working, light, no overthinking
-Flow: discuss unclear requests first, then generate directly applicable code
-Describe the Roblox system you want to build directly
 <<berikan tambahan commands yg tersedia di deepin>>
 
 ## Every End Off Conversation

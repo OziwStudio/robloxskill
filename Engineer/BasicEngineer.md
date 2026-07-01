@@ -228,21 +228,21 @@ MainScript/
 | Command | Rule |
 |---|---|
 | `!readall` | Read `SKILL.md`, Basic core, and needed Basic references once. |
-| `!read-core` | Read `EngineerBasic/Cores`. |
-| `!read-settings` | Read `EngineerBasic/Cores/Settings.md`. |
-| `!read-rules` | Read `EngineerBasic/Cores/Rules.md`. |
-| `!read-commands` | Read `EngineerBasic/Cores/Commands.md`. |
-| `!read-model` | Read `EngineerBasic/Cores/AIModel.md`. |
-| `!read-output` | Read `EngineerBasic/Cores/ChatOutput.md`. |
+| `!read-core` | Read `Engineer/BasicEngineer.md`. |
+| `!read-settings` | Read `Engineer/BasicEngineer.md`. |
+| `!read-rules` | Read `Engineer/BasicEngineer.md`. |
+| `!read-commands` | Read `Engineer/BasicEngineer.md`. |
+| `!read-model` | Read `Engineer/BasicEngineer.md`. |
+| `!read-output` | Read `Engineer/BasicEngineer.md`. |
 | `!read-architecture` | Read `references/Architecture.md`. |
-| `!read-networking` | Read `EngineerBasic/References/Performance.md` networking section. |
+| `!read-networking` | Read `references/Performance.md` networking section. |
 | `!read-security` | Read `references/Architecture.md` security section if present. |
 | `!read-data` | Read `references/Architecture.md` data section if present. |
 | `!read-luau` | Read `references/Architecture.md` Luau patterns section if present. |
 | `!read-systems` | Read `references/Architecture.md` systems section if present. |
 | `!read-uiux` | Read `references/UIUX.md`. |
-| `!read-performance` | Read `EngineerBasic/References/Performance.md`. |
-| `!read-gameplay` | Read `EngineerBasic/References/Performance.md` gameplay section. |
+| `!read-performance` | Read `references/Performance.md`. |
+| `!read-gameplay` | Read `references/Performance.md` gameplay section. |
 | `!read-support-framework` | Read `Supports/Framework.md`. |
 
 ## Skill Support
@@ -281,14 +281,14 @@ MainScript/
 - `architecture`: read `references/Architecture.md`.
 - `settings`: read settings only.
 - `deepin`: read Deepin only when activated.
-- `networking`: read `EngineerBasic/References/Performance.md` networking section.
+- `networking`: read `references/Performance.md` networking section.
 - `security`: read `references/Architecture.md` security section if present.
 - `data`: read `references/Architecture.md` data section if present.
 - `luau`: read `references/Architecture.md` Luau patterns section if present.
 - `systems`: read `references/Architecture.md` systems section if present.
 - `uiux`: read `references/UIUX.md`.
-- `performance`: read `EngineerBasic/References/Performance.md`.
-- `gameplay`: read `EngineerBasic/References/Performance.md` gameplay section.
+- `performance`: read `references/Performance.md`.
+- `gameplay`: read `references/Performance.md` gameplay section.
 - `project-management`: read Project Management support only when activated.
 - `framework`: read Framework support only when activated.
 - `bugfix`: focus on bug fixing mode.
@@ -356,6 +356,6 @@ Describe the Roblox system you want to build directly
 `!bugfix` | `!vulnfix`
 `!genfull` | `!gensnip` | `!refactor`
 ------------------------------------
-`!basic` | Switch enginer to the Deepin
 `!deepin` | Switch enginer to the Deepin
 ------------------------------------
+

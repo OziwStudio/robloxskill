@@ -1,10 +1,12 @@
 # Game Design LiveOps
 
 ## Purpose
+
 - Use for core loop, FTUE, retention, social design, difficulty, updates, and launch planning.
 - Game code must support design that brings players back.
 
 ## Roblox Reality
+
 - Mobile is first-class.
 - Social discovery matters.
 - Short sessions need fast reward.
@@ -12,6 +14,7 @@
 - Monetization must feel fair.
 
 ## Loop Stack
+
 | Loop | Time | Goal |
 |---|---|---|
 | Primary loop | 5-30 seconds | satisfying action |
@@ -19,6 +22,7 @@
 | Meta-progression | days-months | return reason |
 
 ## FTUE Gate
+
 - First action within 5 seconds.
 - First reward within 15-30 seconds.
 - First clear objective visible.
@@ -27,6 +31,7 @@
 - Show one system at a time.
 
 ## Retention Gate
+
 - Daily reason to return.
 - Visible collection progress.
 - Social surface.
@@ -35,6 +40,7 @@
 - Long-term prestige or mastery.
 
 ## Social Gate
+
 - Friends can play together.
 - Players can show progress.
 - Leaderboard or social comparison exists when suitable.
@@ -42,6 +48,7 @@
 - Competitive features stay fair.
 
 ## Difficulty Gate
+
 - Difficulty ramps gradually.
 - Failure reason is clear.
 - Repeated failure gets hint or alternative.
@@ -50,6 +57,7 @@
 - Mobile controls are respected.
 
 ## Update Strategy
+
 - Critical bugs first.
 - Retention features second.
 - FTUE improvements third.
@@ -57,6 +65,7 @@
 - Monetization after game value is clear.
 
 ## Anti-Patterns
+
 - Infinite grind with no variety.
 - Pay-to-win in competitive play.
 - Mobile as afterthought.
@@ -65,6 +74,7 @@
 - Purchase prompt before value.
 
 ## Output Rule
+
 - For game design, state loop stack first.
 - For new game, state first 60 seconds.
 - For retention, state D1/D7/D30 intent.

@@ -97,9 +97,9 @@ Templates/
 |---|---|
 | New complete game | `Templates/GameTemplates/game-scaffold.md` |
 | Specific genre | `Templates/GameTemplates/game-scaffold.md` + one genre template |
-| Custom genre | `Templates/GameTemplates/game-scaffold.md` + `references/OtherReferences/GameDesignLiveOps.md` |
-| Monetized game | template + `references/OtherReferences/MonetizationAndEconomy.md` |
-| Publish-ready game | template + `references/OtherReferences/TestingQA.md` + `references/OtherReferences/ProductionGates.md` |
+| Custom genre | `Templates/GameTemplates/game-scaffold.md` + `references/GameDesignLiveOps.md` |
+| Monetized game | template + `references/MonetizationAndEconomy.md` |
+| Publish-ready game | template + `references/TestingQA.md` + `references/ProductionGates.md` |
 
 ## Extraction Rule
 
@@ -108,6 +108,8 @@ Templates/
 - Use current naming, header, debug, comment, and folder rules.
 - Add missing assumptions briefly.
 - If a template file is missing, name the missing path exactly.
+
+
 
 
 

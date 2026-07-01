@@ -16,8 +16,8 @@
 | Performance | `references/Performance.md` | memory, CPU, loops, streaming, profiling |
 | Gameplay | `references/Gameplay.md` | combat, inventory, economy, progression |
 | UIUX | `references/UIUX.md` | UI state, input, responsiveness, accessibility |
-| Framework | `EngineerDeepin/Specialists/Framework.md` | Knit, ProfileStore, Fusion, Rojo only when enabled |
-| Reviewer | `EngineerDeepin/Specialists/Reviewer.md` | final audit, regression, production readiness |
+| Framework | `references/Framework.md` | Knit, ProfileStore, Fusion, Rojo only when enabled |
+| Reviewer | `references/Reviewer.md` | final audit, regression, production readiness |
 
 ## Activation Rule
 - Use `Deepin: SpecialistName` for one specialist.
@@ -33,3 +33,4 @@
 - Each specialist must route to references only when needed.
 - Deepin must not merge specialist detail into the main agent file.
 - Code examples must live in references, not duplicated across every specialist file.
+

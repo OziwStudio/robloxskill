@@ -1411,7 +1411,7 @@ Each prestige should feel faster than the previous one due to the multiplier, bu
 
 ## 5. Monetization Strategy
 
-For complete implementation details, load `references/monetization-systems.md`.
+For complete implementation details, load `references/MonetizationAndEconomy.md`.
 
 ### GamePasses (One-Time, Permanent)
 
@@ -1515,3 +1515,4 @@ With plots spaced 100 studs apart, a player only loads their own plot and the tw
 ### General Launch Items
 
 Refer to `workflows/publish-checklist.md` for the full publish workflow including game icon, thumbnails, description, social links, and Roblox review submission.
+
