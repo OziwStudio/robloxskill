@@ -96,9 +96,9 @@
 - Read `references/StudioModes.md` for Studio automation or MCP requests.
 
 ## Template Awareness
-- Read `references/bridges/Templates-bridge.md` when user asks `!template`, `!gamefull`, scaffold, or genre game.
-- Read `Templates-bridge.md` to prove template availability and choose a genre template.
-- Use bundled root `Templates/` for template-based game generation.
+- Read `references/bridges/TemplateBridge.md` when user asks `!template`, `!gamefull`, scaffold, or genre game.
+- Read `TemplateBridge.md` to prove template availability and choose a genre template.
+- Use bundled root `templates/` for template-based game generation.
 - Do not require templates for normal answers.
 
 ## Specialist Completeness
@@ -109,14 +109,14 @@
 - Treat newest APIs as optional until verified.
 - Prefer stable services for generated code.
 - Add modern API path only when user requests or project already uses it.
-- Read `references/other/ModernRoblox.md` for modern API decisions.
+- Read `references/topics/ModernRoblox.md` for modern API decisions.
 - Provide fallback when API confidence is not `Stable`.
 - For 2026 API claims, classify confidence and avoid hard requirements unless verified.
 
 ## Missed Documentation Rule
-- Read `references/other/AnimationVFX.md` for animation, VFX, SFX, particle, tween, camera shake, cutscene, ability feedback, and combat polish tasks.
-- Read `references/other/MeshFidelityLOD.md` for `RenderFidelity`, `CollisionFidelity`, `LevelOfDetail`, mesh-heavy maps, pets, NPCs, cosmetics, and mobile rendering.
-- Read `references/other/CommunitySafety2026.md` for youth audience, chat, voice, UGC, ads, subscriptions, reporting, or policy-sensitive systems.
+- Read `references/topics/AnimationVFX.md` for animation, VFX, SFX, particle, tween, camera shake, cutscene, ability feedback, and combat polish tasks.
+- Read `references/topics/MeshFidelityLOD.md` for `RenderFidelity`, `CollisionFidelity`, `LevelOfDetail`, mesh-heavy maps, pets, NPCs, cosmetics, and mobile rendering.
+- Read `references/topics/CommunitySafety2026.md` for youth audience, chat, voice, UGC, ads, subscriptions, reporting, or policy-sensitive systems.
 
 ## Self Check
 - Does server own state?

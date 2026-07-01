@@ -25,7 +25,6 @@ Scan the user's message for these keywords (case-insensitive). Match the first g
 | Obby | obby, obstacle, parkour, jump, platformer, tower, stages |
 | RPG | rpg, quest, adventure, dungeon, story, level up, class, mmorpg, open world |
 | Horror | horror, scary, escape, survive, monster, fear, dark, haunted |
-| Battle Royale | battle royale, pvp, arena, fight, last standing, deathmatch, shooter, fps |
 
 ### If Detected
 
@@ -46,8 +45,7 @@ Present a multiple-choice prompt:
 > 3. **Obby** -- Obstacle course with stages/checkpoints
 > 4. **RPG** -- Quests, combat, leveling, story-driven adventure
 > 5. **Horror** -- Atmospheric scares, survival, escape scenarios
-> 6. **Battle Royale** -- PvP combat, last player/team standing
-> 7. **Custom** -- I have something unique in mind (describe it)
+> 6. **Custom** -- I have something unique in mind (describe it)
 
 If the user selects **Custom**, skip genre-specific templates in Step 2 and use only the universal scaffold. Gather a short description of their concept to inform architecture decisions.
 
@@ -59,7 +57,7 @@ Load the appropriate template files based on the detected genre.
 
 ### Always Load
 
-Read `templates/game-scaffold.md` -- this contains the universal base structure that every game needs:
+Read `templates/GameTemplates/game-scaffold.md` -- this contains the universal base structure that every game needs:
 - Folder hierarchy (ServerScriptService, ReplicatedStorage, etc.)
 - DataManager boilerplate
 - Remote event setup
@@ -72,12 +70,11 @@ Read the genre template based on the detected type:
 
 | Genre | Template File |
 |---|---|
-| Simulator | `templates/genre-simulator.md` |
-| Tycoon | `templates/genre-tycoon.md` |
-| Obby | `templates/genre-obby.md` |
-| RPG | `templates/genre-rpg.md` |
-| Horror | `templates/genre-horror.md` |
-| Battle Royale | `templates/genre-battle-royale.md` |
+| Simulator | `templates/GameTemplates/genre-simulator.md` |
+| Tycoon | `templates/GameTemplates/genre-tycoon.md` |
+| Obby | `templates/GameTemplates/genre-obby.md` |
+| RPG | `templates/GameTemplates/genre-rpg.md` |
+| Horror | `templates/GameTemplates/genre-horror.md` |
 | Custom | No genre template -- use only the scaffold |
 
 ### What to Extract
@@ -551,7 +548,7 @@ Based on the scope and genre, suggest 4-6 concrete next steps. Tailor suggestion
 - Add analytics (track retention, monetization, progression)
 - Set up automated testing (TestEZ specs for core logic)
 - Create a content pipeline (easy way to add new items/levels)
-- Run a security audit (load `workflows/security-audit.md`)
+- Run a security audit (load `workflows/audit-security.md`)
 - Prepare for publishing (load `workflows/publish-checklist.md`)
 
 ### Close with Routing

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is the universal foundation for ANY Roblox game regardless of genre. Use this as the starting point before applying genre-specific templates (simulator, tycoon, obby, RPG, horror, battle royale, etc.). Genre templates build on top of this scaffold -- they never replace it.
+This is the universal foundation for ANY Roblox game regardless of genre. Use this as the starting point before applying genre-specific templates (simulator, tycoon, obby, RPG, horror, etc.). Genre templates build on top of this scaffold -- they never replace it.
 
 This scaffold provides:
 - Standard folder structure with clear separation of concerns

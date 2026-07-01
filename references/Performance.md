@@ -524,3 +524,32 @@ end
 - For audits, separate CPU, memory, rendering, networking, and gameplay costs.
 - Include the target platform if it matters.
 - Call out any tradeoff that shifts load elsewhere.
+
+## Audit Focus
+
+- Use this file as the source of truth for performance audit rules.
+- Start with profiling data, not assumptions.
+- Treat hot-path CPU, memory leaks, replication, rendering, and mobile viability as the main audit buckets.
+- Treat repeated work, unbounded loops, and connection leaks as top risks.
+- Treat part count, mesh complexity, and unnecessary replication as scale risks.
+- Treat cleanup and bounded update rates as mandatory gates.
+
+## Audit Checks
+
+- Check `wait()`/`spawn()`/`delay()` usage.
+- Check repeated `GetService` calls in hot paths.
+- Check multiple `Heartbeat` or `RenderStepped` connections.
+- Check `Instance.new` in loops or hot paths.
+- Check undisconnected events and per-player leaks.
+- Check remote spam and oversized payloads.
+- Check part count, unanchored physics, and mesh complexity.
+- Check low-end mobile behavior first.
+
+## Threshold Guide
+
+- Over ~2ms per frame: needs attention.
+- Over 10,000 parts in a scene: requires culling or streaming review.
+- Over 50,000 parts: critical redesign territory.
+- Over 10,000 triangles per MeshPart: flag for review.
+- Fire remotes in controlled bursts, not in frame loops.
+- Keep hot-path validation tiny.

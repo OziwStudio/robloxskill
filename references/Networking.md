@@ -229,6 +229,34 @@ Ownership:
 Risks:
 ```
 
+## Audit Focus
+
+- Use this file for remote surface review and replication boundaries.
+- Treat remote payloads as the primary attack surface.
+- Keep the client-to-server path intent-based.
+- Keep server-to-client payloads minimal and non-sensitive.
+- Prefer RemoteEvent over RemoteFunction unless blocking reads are unavoidable.
+- Keep high-frequency gameplay traffic separate from cosmetic traffic.
+
+## Audit Checks
+
+- Every client-to-server remote has a clear owner, purpose, and validation gate.
+- Every server-to-client sync path sends only necessary state.
+- Every RemoteFunction has a strong reason to exist and a bounded call rate.
+- Every high-frequency path has explicit frequency and payload limits.
+- Replicated data does not expose secrets, internal IDs, or exploit-relevant configs.
+- Network ownership matches the object that should move it.
+- Prediction has reconciliation and does not replace server authority.
+
+## Remote Contract Rules
+
+- Client sends intent, not outcome.
+- Server validates every payload before acting.
+- Payloads stay small, stable, and schema-driven.
+- Extra arguments are rejected.
+- Rate limiting is per player and per action.
+- Blocking calls stay rare and explicit.
+
 ## Remote Surface Review
 - List every client to server remote.
 - List every server to client sync path.

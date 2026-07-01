@@ -88,8 +88,8 @@
 
 ## Missed Docs
 
-- For mesh physics and rendering, read `references/other/MeshFidelityLOD.md`.
-- For community standards, youth access, chat, ads, UGC, and policy-sensitive systems, read `references/other/CommunitySafety2026.md`.
+- For mesh physics and rendering, read `references/topics/MeshFidelityLOD.md`.
+- For community standards, youth access, chat, ads, UGC, and policy-sensitive systems, read `references/topics/CommunitySafety2026.md`.
 
 ## Brownfield Upgrade
 

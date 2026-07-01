@@ -223,5 +223,5 @@ Use this when the user wants the agent to build or repair a place end-to-end.
 - Overusing destructive operations.
 
 ## Template Rule
-- If `Templates/` exists in Roblox Skill Pluz, read matching template.
-- If `Templates/` is missing, ask the user to copy templates first or continue with built-in genre rules.
+- If `templates/` exists in Roblox Skill Pluz, read matching template.
+- If `templates/` is missing, ask the user to copy templates first or continue with built-in genre rules.

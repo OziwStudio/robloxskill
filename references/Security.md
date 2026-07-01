@@ -113,6 +113,35 @@
 - Show why the exploit fails after the patch.
 - Keep security output short and direct.
 
+## Audit Focus
+
+- This file is the source of truth for security audit rules.
+- Assume every client payload is attacker-controlled.
+- Assume every remote is public.
+- Assume sensitive state must stay server-owned.
+- Audit for exploit paths before defense-in-depth gaps.
+- Prefer fixes that move authority to the server.
+- Prefer fixes that make abuse impossible, not merely noisy.
+
+## Audit Checks
+
+- Remote handler validates type, range, schema, ownership, permission, state, distance, and receipt.
+- Remote handler rejects extra or malformed arguments.
+- Remote handler is rate-limited per player and per action.
+- Remote handler does not trust client currency, inventory, damage, reward, or purchase outcome.
+- Remote handler does not expose server-only state through replicated values or payloads.
+- Receipt logic is idempotent and deduplicated.
+- Transaction logic is atomic and failure-safe.
+- Admin paths use server-owned permission checks.
+- Exploit attempts can be traced without relying on client reports.
+
+## Severity Guide
+
+- Critical: direct currency, item, stat, or receipt abuse.
+- High: unfair advantage, duplication, privilege escalation, or player data exposure.
+- Medium: missing defense-in-depth that weakens the boundary but does not open an obvious exploit path.
+- Low: hardening, cleanup, or observability gaps.
+
 ## Practical Principles
 
 - Treat every remote as a public endpoint.
@@ -125,6 +154,15 @@
 - Keep server mutations atomic.
 - Keep failure handling deterministic.
 - Keep logs useful, not noisy.
+
+## Security Patterns
+
+- Read `references/bridges/ImplementationPatterns.md` for payload validation, rate limit, remote handler, and server authority snippets.
+- Keep remote contracts explicit and narrow.
+- Keep secure defaults server-side.
+- Keep client messages intent-based, not result-based.
+- Keep replay-prone operations idempotent.
+- Keep privileged actions isolated from general gameplay remotes.
 
 ## Threat Model
 - Assume LocalScripts are modified.

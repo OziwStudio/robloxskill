@@ -81,19 +81,19 @@ Read only when Deepin is active and needed.
 | `references/bridges/Router.md` | specialist routing and adopted strengths |
 | `references/bridges/WorkflowPlaybooks.md` | debug, audit, publish, monetization workflows |
 | `references/Production.md` | sharp edges and final gates |
-| `references/other/GameDesign.md` | complete Roblox game routing and launch layer |
+| `references/topics/GameDesign.md` | complete Roblox game routing and launch layer |
 | `references/StudioModes.md` | Studio MCP/full/standard/offline behavior |
-| `references/bridges/Templates-bridge.md` | bundled `Templates/` bridge |
+| `references/bridges/TemplateBridge.md` | bundled `templates/` bridge |
 | `references/bridges/SpecialistManifest.md` | 10 separate Deepin specialist manifest |
 | `references/bridges/ImplementationPatterns.md` | concrete Luau, remote, data, security, gameplay code patterns |
-| `references/other/TestingQA.md` | testing, QA, regression, smoke, and CI guidance |
-| `references/other/GameDesign.md` | FTUE, retention, social, difficulty, update strategy |
-| `references/other/MonetizationAndEconomy.md` | purchase safety, pricing, economy, monetization ethics |
-| `references/other/GameDesign.md` | genre-specific Roblox patterns |
-| `references/other/ModernRoblox.md` | modern Roblox API confidence, Open Cloud, streaming, UI, avatar, LiveOps |
-| `references/other/AnimationVFX.md` | animation, VFX, SFX, camera shake, particles, tweens, visual feedback |
-| `references/other/MeshFidelityLOD.md` | RenderFidelity, CollisionFidelity, LevelOfDetail, mesh optimization |
-| `references/other/CommunitySafety2026.md` | community safety, youth audience, chat, UGC, ads, policy-sensitive systems |
+| `references/topics/TestingQA.md` | testing, QA, regression, smoke, and CI guidance |
+| `references/topics/GameDesign.md` | FTUE, retention, social, difficulty, update strategy |
+| `references/topics/MonetizationAndEconomy.md` | purchase safety, pricing, economy, monetization ethics |
+| `references/topics/GameDesign.md` | genre-specific Roblox patterns |
+| `references/topics/ModernRoblox.md` | modern Roblox API confidence, Open Cloud, streaming, UI, avatar, LiveOps |
+| `references/topics/AnimationVFX.md` | animation, VFX, SFX, camera shake, particles, tweens, visual feedback |
+| `references/topics/MeshFidelityLOD.md` | RenderFidelity, CollisionFidelity, LevelOfDetail, mesh optimization |
+| `references/topics/CommunitySafety2026.md` | community safety, youth audience, chat, UGC, ads, policy-sensitive systems |
 | `references/*.md` | Deepin specialist gates loaded by `Deepin: SpecialistName` |
 | `references/Architecture.md` | deep architecture |
 | `references/Networking.md` | deep networking |
@@ -127,21 +127,21 @@ Read only when Deepin is active and needed.
 - If the user asks for `Engineer: Deepin`, switch to the Deepin path.
 - If the user asks `Deepin: SpecialistName`, load that specialist focus.
 - Deepin specialists: `Luau`, `Architecture`, `Networking`, `Security`, `Performance`, `Data`, `Gameplay`, `UIUX`, `Framework`, `Reviewer`.
-- If the user asks `!modernapi`, read `references/other/ModernRoblox.md` and provide stable fallback.
-- If the user asks `!gamefull`, read complete game references and bundled `Templates/` files.
-- If the user asks `!template`, read `references/bridges/Templates-bridge.md` and one matching bundled template.
+- If the user asks `!modernapi`, read `references/topics/ModernRoblox.md` and provide stable fallback.
+- If the user asks `!gamefull`, read complete game references and bundled `templates/` files.
+- If the user asks `!template`, read `references/bridges/TemplateBridge.md` and one matching bundled template.
 
 ## Bundled Templates
-These files are included in the root `Templates/` folder and are ready to use.
+These files are included in the root `templates/` folder and are ready to use.
 | Template | Path |
 |---|---|
-| Scaffold | `Templates/GameTemplates/game-scaffold.md` |
-| Simulator | `Templates/GameTemplates/genre-simulator.md` |
-| Tycoon | `Templates/GameTemplates/genre-tycoon.md` |
-| Obby | `Templates/GameTemplates/genre-obby.md` |
-| RPG | `Templates/GameTemplates/genre-rpg.md` |
-| Horror | `Templates/GameTemplates/genre-horror.md` |
-| Battle Royale | `Templates/GameTemplates/genre-battle-royale.md` |
+| Scaffold | `templates/GameTemplates/game-scaffold.md` |
+| Simulator | `templates/GameTemplates/genre-simulator.md` |
+| Tycoon | `templates/GameTemplates/genre-tycoon.md` |
+| Obby | `templates/GameTemplates/genre-obby.md` |
+| RPG | `templates/GameTemplates/genre-rpg.md` |
+| Horror | `templates/GameTemplates/genre-horror.md` |
+| Battle Royale | `templates/GameTemplates/genre-battle-royale.md` |
 
 ## Working Rule
 - Use rules, not long explanations.

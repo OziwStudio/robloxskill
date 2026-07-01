@@ -259,6 +259,26 @@ end)
 - `RemoteEvent` payloads are attacker-controlled.
 - Client state is readable and mutable.
 
+## Debugging Rules
+
+- Start with the exact error string and stack trace.
+- Read the line cited in the error before rewriting code.
+- Classify the failure as syntax, runtime, logic, security, or performance.
+- Add nil guards, type checks, or timing checks at the boundary.
+- Keep the first fix as small as possible.
+- Re-test the same path after every change.
+- If the bug repeats, record the hypothesis and the result of each attempt.
+- Prefer explicit failure over silent confusion.
+- Move repeated bug patterns into shared helpers when they recur.
+
+## Debugging Gotchas
+
+- `nil` often comes from `FindFirstChild`, `Player.Character`, or missing remote payloads.
+- Wrong service names cause runtime failures that look like missing objects.
+- Deprecated globals can hide timing issues in hot paths.
+- Remote payloads from clients must be treated as untrusted input.
+- `WaitForChild` without a timeout can hide a stuck setup.
+
 ## Sharp Edge Details
 
 ### 1-Based Indexing

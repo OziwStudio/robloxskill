@@ -80,7 +80,7 @@
 1. Detect genre.
 2. Read `GameDesign.md`.
 3. Read `TemplateBridge.md`.
-4. Read matching template from `Templates/` if present.
+4. Use its template choice to load one matching `templates/` file if present.
 5. Define first 60 seconds.
 6. Define scaffold.
 7. Generate core systems.

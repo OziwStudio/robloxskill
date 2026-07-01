@@ -1,8 +1,8 @@
 # Template Bridge
 
 ## Purpose
-- This bridge connects Deepin to the bundled root `Templates/` folder.
-- Ready-to-use genre templates live in `Templates/GameTemplates/`.
+- This bridge connects Deepin to the bundled root `templates/` folder.
+- Ready-to-use genre templates live in `templates/GameTemplates/`.
 - Do not search templates in adoption folders.
 - Do not recreate long templates when the template file already exists.
 - Read a template only when the genre or scaffold needs detail.
@@ -10,38 +10,35 @@
 
 ## Expected Folder
 ```text
-Templates/
+templates/
   GameTemplates/game-scaffold.md
   GameTemplates/genre-simulator.md
   GameTemplates/genre-tycoon.md
   GameTemplates/genre-obby.md
   GameTemplates/genre-rpg.md
   GameTemplates/genre-horror.md
-  GameTemplates/genre-battle-royale.md
 ```
 
 ## Command Router
 | Command | Template |
 |---|---|
-| `!template scaffold` | `Templates/GameTemplates/game-scaffold.md` |
-| `!template simulator` | `Templates/GameTemplates/genre-simulator.md` |
-| `!template tycoon` | `Templates/GameTemplates/genre-tycoon.md` |
-| `!template obby` | `Templates/GameTemplates/genre-obby.md` |
-| `!template rpg` | `Templates/GameTemplates/genre-rpg.md` |
-| `!template horror` | `Templates/GameTemplates/genre-horror.md` |
-| `!template battleroyale` | `Templates/GameTemplates/genre-battle-royale.md` |
+| `!template scaffold` | `templates/GameTemplates/game-scaffold.md` |
+| `!template simulator` | `templates/GameTemplates/genre-simulator.md` |
+| `!template tycoon` | `templates/GameTemplates/genre-tycoon.md` |
+| `!template obby` | `templates/GameTemplates/genre-obby.md` |
+| `!template rpg` | `templates/GameTemplates/genre-rpg.md` |
+| `!template horror` | `templates/GameTemplates/genre-horror.md` |
 
 ## Ready Check
-- `Templates/GameTemplates/game-scaffold.md` must exist.
-- `Templates/GameTemplates/genre-simulator.md` must exist.
-- `Templates/GameTemplates/genre-tycoon.md` must exist.
-- `Templates/GameTemplates/genre-obby.md` must exist.
-- `Templates/GameTemplates/genre-rpg.md` must exist.
-- `Templates/GameTemplates/genre-horror.md` must exist.
-- `Templates/GameTemplates/genre-battle-royale.md` must exist.
+- `templates/GameTemplates/game-scaffold.md` must exist.
+- `templates/GameTemplates/genre-simulator.md` must exist.
+- `templates/GameTemplates/genre-tycoon.md` must exist.
+- `templates/GameTemplates/genre-obby.md` must exist.
+- `templates/GameTemplates/genre-rpg.md` must exist.
+- `templates/GameTemplates/genre-horror.md` must exist.
 
 ## Read Rule
-- Read `Templates/GameTemplates/game-scaffold.md` for new complete game.
+- Read `templates/GameTemplates/game-scaffold.md` for new complete game.
 - Read one genre template only.
 - If user asks custom genre, use scaffold plus `GameDesign.md`.
 - If template is missing, say which file is missing and continue with built-in `GameDesign.md` if acceptable.
@@ -71,22 +68,21 @@ Templates/
 ## Ready Templates
 | Template | Path | Use |
 |---|---|---|
-| Scaffold | `Templates/GameTemplates/game-scaffold.md` | complete game structure |
-| Simulator | `Templates/GameTemplates/genre-simulator.md` | loop click, upgrade, pet, rebirth |
-| Tycoon | `Templates/GameTemplates/genre-tycoon.md` | plot, dropper, conveyor, cash, unlock |
-| Obby | `Templates/GameTemplates/genre-obby.md` | checkpoint, stage, timer, reward |
-| RPG | `Templates/GameTemplates/genre-rpg.md` | quest, level, combat, inventory |
-| Horror | `Templates/GameTemplates/genre-horror.md` | atmosphere, objective, chase, tension |
-| Battle Royale | `Templates/GameTemplates/genre-battle-royale.md` | lobby, match, zone, loot, elimination |
+| Scaffold | `templates/GameTemplates/game-scaffold.md` | complete game structure |
+| Simulator | `templates/GameTemplates/genre-simulator.md` | loop click, upgrade, pet, rebirth |
+| Tycoon | `templates/GameTemplates/genre-tycoon.md` | plot, dropper, conveyor, cash, unlock |
+| Obby | `templates/GameTemplates/genre-obby.md` | checkpoint, stage, timer, reward |
+| RPG | `templates/GameTemplates/genre-rpg.md` | quest, level, combat, inventory |
+| Horror | `templates/GameTemplates/genre-horror.md` | atmosphere, objective, chase, tension |
 
 ## Read Matrix
 | Request | Read |
 |---|---|
-| New complete game | `Templates/GameTemplates/game-scaffold.md` |
-| Specific genre | `Templates/GameTemplates/game-scaffold.md` + one genre template |
-| Custom genre | `Templates/GameTemplates/game-scaffold.md` + `GameDesign.md` |
-| Monetized game | template + `references/other/MonetizationAndEconomy.md` |
-| Publish-ready game | template + `references/other/TestingQA.md` + `references/Production.md` |
+| New complete game | `templates/GameTemplates/game-scaffold.md` |
+| Specific genre | `templates/GameTemplates/game-scaffold.md` + one genre template |
+| Custom genre | `templates/GameTemplates/game-scaffold.md` + `GameDesign.md` |
+| Monetized game | template + `references/topics/MonetizationAndEconomy.md` |
+| Publish-ready game | template + `references/topics/TestingQA.md` + `references/Production.md` |
 
 ## Extraction Rule
 - Extract only the needed section.

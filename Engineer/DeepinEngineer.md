@@ -85,11 +85,11 @@
 
 ## Manifest Files
 - Specialist completeness: `references/bridges/SpecialistManifest.md`.
-- Template completeness: `Templates/GameTemplates/`.
+- Template completeness: `templates/GameTemplates/`.
 - Concrete code patterns: `references/bridges/ImplementationPatterns.md`.
-- Animation and VFX: `references/other/AnimationVFX.md`.
-- Mesh fidelity and LOD: `references/other/MeshFidelityLOD.md`.
-- Community safety 2026: `references/other/CommunitySafety2026.md`.
+- Animation and VFX: `references/topics/AnimationVFX.md`.
+- Mesh fidelity and LOD: `references/topics/MeshFidelityLOD.md`.
+- Community safety 2026: `references/topics/CommunitySafety2026.md`.
 
 ## Core References
 | Need | Read |
@@ -97,10 +97,10 @@
 | Specialist routing | `references/bridges/Router.md` |
 | Implementation examples | `references/bridges/ImplementationPatterns.md` |
 | Production gates | `references/Production.md` |
-| Complete games | `references/other/GameDesign.md` |
-| Modern APIs | `references/other/ModernRoblox.md` |
-| Template games | `references/bridges/Templates-bridge.md` + `Templates/GameTemplates/` |
-| QA and testing | `references/other/TestingQA.md` |
+| Complete games | `references/topics/GameDesign.md` |
+| Modern APIs | `references/topics/ModernRoblox.md` |
+| Template games | `references/bridges/TemplateBridge.md` + `templates/GameTemplates/` |
+| QA and testing | `references/topics/TestingQA.md` |
 
 ## Activation Rules
 - `!bugfix`: activate Luau + Reviewer, add domain specialist if needed.
@@ -381,20 +381,20 @@
 | `!read-deepin-router` | Read `references/bridges/Router.md`. |
 | `!read-workflow` | Read `references/bridges/WorkflowPlaybooks.md`. |
 | `!read-gates` | Read `references/Production.md`. |
-| `!read-complete-game` | Read `references/other/GameDesign.md`. |
+| `!read-complete-game` | Read `references/topics/GameDesign.md`. |
 | `!read-studio-modes` | Read `references/StudioModes.md`. |
-| `!read-template-bridge` | Read `references/bridges/Templates-bridge.md`. |
-| `!read-template-catalog` | Read `Templates/GameTemplates/`. |
-| `!read-testing` | Read `references/other/TestingQA.md`. |
-| `!read-design` | Read `references/other/GameDesign.md`. |
-| `!read-monetization` | Read `references/other/MonetizationAndEconomy.md`. |
-| `!read-genre` | Read `references/other/GameDesign.md`. |
-| `!read-modern` | Read `references/other/ModernRoblox.md`. |
-| `!read-animation-vfx` | Read `references/other/AnimationVFX.md`. |
+| `!read-template-bridge` | Read `references/bridges/TemplateBridge.md`. |
+| `!read-template-catalog` | Read `templates/GameTemplates/`. |
+| `!read-testing` | Read `references/topics/TestingQA.md`. |
+| `!read-design` | Read `references/topics/GameDesign.md`. |
+| `!read-monetization` | Read `references/topics/MonetizationAndEconomy.md`. |
+| `!read-genre` | Read `references/topics/GameDesign.md`. |
+| `!read-modern` | Read `references/topics/ModernRoblox.md`. |
+| `!read-animation-vfx` | Read `references/topics/AnimationVFX.md`. |
 | `!read-specialists` | Read `references/bridges/SpecialistManifest.md`. |
 | `!read-patterns` | Read `references/bridges/ImplementationPatterns.md`. |
-| `!read-mesh-lod` | Read `references/other/MeshFidelityLOD.md`. |
-| `!read-safety2026` | Read `references/other/CommunitySafety2026.md`. |
+| `!read-mesh-lod` | Read `references/topics/MeshFidelityLOD.md`. |
+| `!read-safety2026` | Read `references/topics/CommunitySafety2026.md`. |
 
 ## Engineer
 | Command | Action |
@@ -490,7 +490,7 @@
 - `publish`: read workflow and gates.
 - `monetization`: read workflow, data, security.
 - `gamefull`: read GameDesign, TemplateBridge, TestingQA.
-- `template`: read TemplateBridge and one matching `Templates/` file if present.
+- `template`: read TemplateBridge and one matching `templates/` file if present.
 - `testing`: read TestingQA.
 - `sharpedges`: read Production.
 - `mcp`: read StudioModes.

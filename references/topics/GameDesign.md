@@ -458,12 +458,12 @@ Rules:
 
 | Intent | Read |
 |---|---|
-| New game | `references/bridges/WorkflowPlaybooks.md`, `references/bridges/Templates-bridge.md`, `references/other/MonetizationAndEconomy.md`, `references/Production.md`, `references/other/TestingQA.md` |
-| Complete game | `references/bridges/Templates-bridge.md`, `references/bridges/WorkflowPlaybooks.md`, `references/Performance.md`, `references/Architecture.md`, `references/Networking.md`, `references/Data.md` |
-| Monetization | `references/other/MonetizationAndEconomy.md`, `references/Production.md`, `references/Data.md`, `references/Security.md` |
-| Testing | `references/other/TestingQA.md`, `references/bridges/WorkflowPlaybooks.md` |
+| New game | `references/bridges/WorkflowPlaybooks.md`, `references/bridges/TemplateBridge.md`, `references/topics/MonetizationAndEconomy.md`, `references/Production.md`, `references/topics/TestingQA.md` |
+| Complete game | `references/bridges/WorkflowPlaybooks.md`, `references/bridges/TemplateBridge.md`, `references/Performance.md`, `references/Architecture.md`, `references/Networking.md`, `references/Data.md` |
+| Monetization | `references/topics/MonetizationAndEconomy.md`, `references/Production.md`, `references/Data.md`, `references/Security.md` |
+| Testing | `references/topics/TestingQA.md`, `references/bridges/WorkflowPlaybooks.md` |
 | Studio automation | `references/StudioModes.md` |
-| Publish | `references/bridges/WorkflowPlaybooks.md`, `references/Production.md`, `references/other/TestingQA.md`, `references/other/GameDesign.md` |
+| Publish | `references/bridges/WorkflowPlaybooks.md`, `references/Production.md`, `references/topics/TestingQA.md` |
 
 ## New Game Order
 

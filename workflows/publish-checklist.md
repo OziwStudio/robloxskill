@@ -86,7 +86,6 @@ A comprehensive pre-publish checklist for Roblox games. Work through each catego
 - Obby: skip stage, checkpoint save, cosmetic trails, speed boost.
 - RPG: cosmetics, extra slots, XP boost, inventory expansion, fast travel.
 - Horror: cosmetic flashlight, emotes, spectator mode, role selection.
-- Battle Royale: season pass, cosmetics, emotes, lobby effects, stat tracker.
 - General: VIP servers, music pass, chat effects, trade access, daily bonus.
 
 ### Pricing Analysis

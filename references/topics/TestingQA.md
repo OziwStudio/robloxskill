@@ -227,6 +227,32 @@ local results = TestEZ.TestBootstrap:run({
 - Validate missing remote payloads.
 - Validate duplicate receipt handling.
 
+## Debug Workflow
+
+- Collect the raw error output first.
+- Capture exact error text, stack trace, script path, and line number.
+- Reproduce the bug before changing code when possible.
+- Read surrounding source and related callers or modules.
+- Classify the bug before fixing it.
+- Keep fixes minimal and focused.
+- Re-run the failing path after each change.
+- Stop after a bounded number of failed attempts and write a findings summary.
+
+## Debug Iteration Rule
+
+- Limit repeated automatic debug passes.
+- Track hypothesis, attempted fix, and result for each pass.
+- Escalate when the same issue persists after multiple attempts.
+- Keep regression notes close to the changed code.
+
+## Bug Report Rule
+
+- Record exact error, script path, and line.
+- Record root cause category.
+- Record the fix applied.
+- Record iterations required.
+- Record preventive advice for the same class of bug.
+
 ## Output Format
 
 ```text
