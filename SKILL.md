@@ -1,7 +1,7 @@
 ---
 name: roblox-skill-pluz
 description: >
-  Roblox Skill Pluz v1.4.09 by Terla Community for Roblox Studio and Luau. A two-mode skill with
+  Roblox Skill Pluz v1.5.0 by Terla Community for Roblox Studio and Luau. A two-mode skill with
   Basic for light, token-efficient work and Deepin for deeper specialist analysis,
   principal-engineer depth, risk matrix routing, stronger review gates, art-directed UI/UX, modern Roblox guidance, animation/VFX coverage, community safety,
   complete game flow, bundled templates, and optional
