@@ -1,12 +1,14 @@
 # Complete Game Layer
 
 ## Purpose
+
 - This reference makes Deepin complete for full Roblox game creation.
 - Use when the user asks for a new game, complete system, game design, genre, publish, live-service, or broad audit.
 - Load this file before choosing a long technical workflow.
 - Still use other files only when needed.
 
 ## Complete Game Stack
+
 1. Core loop.
 2. FTUE.
 3. Progression.
@@ -23,6 +25,7 @@
 14. Update strategy.
 
 ## Intent Router
+
 | Intent | Read |
 |---|---|
 | New game | `WorkflowPlaybooks.md`, `GameDesignLiveOps.md`, `TemplateBridge.md`, `TemplateCatalog.md`, `GenrePlaybooks.md` |
@@ -38,6 +41,7 @@
 | Publish | `WorkflowPlaybooks.md`, `ProductionGates.md`, `TestingQA.md`, `GameDesignLiveOps.md` |
 
 ## New Game Order
+
 1. Detect genre.
 2. Load template bridge and template catalog.
 3. Define scope: MVP, standard, full, live-service.
@@ -51,6 +55,7 @@
 11. Run production gates.
 
 ## MVP Rule
+
 - Make first playable fast.
 - Keep server authority from day one.
 - Keep data safe from day one.
@@ -58,6 +63,7 @@
 - Add complexity after loop works.
 
 ## Complete Game Gate
+
 - Core loop works in 10 seconds.
 - First reward happens within 30 seconds.
 - Player knows next action.
