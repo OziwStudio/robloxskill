@@ -1,4 +1,4 @@
-# Settings
+# Settings of Deepin
 
 ## Default
 

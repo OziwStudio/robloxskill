@@ -69,10 +69,6 @@ StarterPlayerScripts/
 --[[
 # SystemName v1.0.0
 # ServerScriptService/SystemServer/Main.server.luau (server script)(v1.0.0)
-# Side: Server
-# Deps: ServerScriptService.SystemServer.SystemService
------
-Add: server bootstrap
 ]]
 
 local DebugSucces = true

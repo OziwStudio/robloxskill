@@ -1,7 +1,7 @@
 ---
 name: roblox-skill-pluz
 description: >
-  Roblox Skill Pluz v1.4.05 by Terla Community for Roblox Studio and Luau. A two-mode skill with
+  Roblox Skill Pluz v1.4.07 by Terla Community for Roblox Studio and Luau. A two-mode skill with
   Basic for light, token-efficient work and Deepin for deeper specialist analysis,
   principal-engineer depth, risk matrix routing, stronger review gates, art-directed UI/UX, modern Roblox guidance, animation/VFX coverage, community safety,
   complete game flow, bundled templates, and optional
@@ -20,13 +20,8 @@ description: >
 - Do not reread every file every turn; read only the needed file when the user uses a command.
 - Prioritize powerful reasoning with efficient token use.
 - On first activation, read:
-  - `EngineerBasic/Cores/AIModel.md`
-  - `EngineerBasic/Cores/Settings.md`
-  - `EngineerBasic/Cores/Rules.md`
-  - `EngineerBasic/Cores/Commands.md`
-  - `EngineerBasic/Cores/ChatOutput.md`
-  - `EngineerBasic/BasicEngineerAgent.md`
-- After the first read, output the exact ready message from `EngineerBasic/Cores/ChatOutput.md`.
+  - `Engineer/BasicEngineer.md`
+- After the first read, output the exact ready message from `Engineer/BasicEngineer.md`.
 
 ## Rule Priority
 
@@ -65,12 +60,7 @@ Higher priority wins when rules conflict.
 
 | File | Purpose |
 |---|---|
-| `EngineerBasic/Cores/AIModel.md` | BasicEngineer identity and response posture |
-| `EngineerBasic/Cores/Settings.md` | user-selectable support and memorize settings |
-| `EngineerBasic/Cores/Rules.md` | mandatory Roblox coding rules |
-| `EngineerBasic/Cores/Commands.md` | command list and file routing |
-| `EngineerBasic/Cores/ChatOutput.md` | message after reading the skill |
-| `EngineerBasic/BasicEngineerAgent.md` | default balanced engineer |
+| `Engineer/BasicEngineer.md` | merged Basic core, commands, and ready output |
 
 ## Basic References
 

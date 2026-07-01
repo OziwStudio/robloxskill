@@ -1,7 +1,6 @@
-# Commands
+# Commands of Deepin
 
 ## Core
-
 | Command | Action |
 |---|---|
 | `!deepin` | Activate Deepin and read `EngineerDeepin/DeepinEngineerAgent.md`. |
@@ -26,7 +25,6 @@
 | `!read-safety2026` | Read `References/CommunitySafety2026.md`. |
 
 ## Engineer
-
 | Command | Action |
 |---|---|
 | `Engineer: Basic` | Use default BasicEngineer. |
@@ -44,7 +42,6 @@
 | `Deepin: Framework` | Focus framework only when support is enabled. |
 
 ## Specialist Files
-
 | Command | Read |
 |---|---|
 | `Deepin: Luau` | `EngineerDeepin/Specialists/Luau.md` |
@@ -59,7 +56,6 @@
 | `Deepin: Reviewer` | `EngineerDeepin/Specialists/Reviewer.md` |
 
 ## Task
-
 | Command | Action |
 |---|---|
 | `!genfull` | Generate full system with file tree first. |
@@ -82,7 +78,6 @@
 | `!retention` | Review return loops, social hooks, and LiveOps. |
 
 ## Reading
-
 | Command | Action |
 |---|---|
 | `!read-architecture` | Read `references/Architecture.md`. |
@@ -103,7 +98,6 @@
 | `!read-implementation-patterns` | Read concrete Deepin code patterns. |
 
 ## Support
-
 | Command | Action |
 |---|---|
 | `!support-framework` | Enable Framework support. |
@@ -118,7 +112,6 @@
 - Ask: `Generation type: package or copy-paste?`
 
 ## Keyword Rules
-
 - `deepin`: activate Deepin.
 - `bugfix`: read workflow and focus root cause.
 - `vulnfix`: read security and gates.

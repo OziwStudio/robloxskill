@@ -1,4 +1,4 @@
-# Rules
+# Rules of Deepin
 
 ## General
 
