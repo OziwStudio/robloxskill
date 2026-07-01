@@ -10,14 +10,14 @@
 
 | Specialist | Path | Responsibility |
 |---|---|---|
-| Architecture | `EngineerDeepin/Specialists/Architecture.md` | boundaries, folders, ownership, scaling |
+| Architecture | `references/Architecture.md` | boundaries, folders, ownership, scaling |
 | Luau | `EngineerDeepin/Specialists/Luau.md` | strict/nonstrict, modules, typing, lifecycle |
 | Networking | `EngineerDeepin/Specialists/Networking.md` | remotes, replication, prediction, rate limits |
 | Security | `EngineerDeepin/Specialists/Security.md` | exploit paths, authority, validation, permissions |
 | Data | `EngineerDeepin/Specialists/Data.md` | DataStore, ProfileStore, migration, receipts |
 | Performance | `references/Performance.md` | memory, CPU, loops, streaming, profiling |
 | Gameplay | `EngineerDeepin/Specialists/Gameplay.md` | combat, inventory, economy, progression |
-| UIUX | `EngineerDeepin/Specialists/UIUX.md` | UI state, input, responsiveness, accessibility |
+| UIUX | `references/UIUX.md` | UI state, input, responsiveness, accessibility |
 | Framework | `EngineerDeepin/Specialists/Framework.md` | Knit, ProfileStore, Fusion, Rojo only when enabled |
 | Reviewer | `EngineerDeepin/Specialists/Reviewer.md` | final audit, regression, production readiness |
 

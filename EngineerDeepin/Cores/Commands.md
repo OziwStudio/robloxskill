@@ -32,14 +32,14 @@
 | `Engineer: Basic` | Use default BasicEngineer. |
 | `Engineer: Deepin` | Use DeepinEngineer. |
 | `Deepin: Solo` | Use Deepin without specialist split. |
-| `Deepin: Architecture` | Focus architecture. |
+| `Deepin: Architecture` | Focus `references/Architecture.md`. |
 | `Deepin: Luau` | Focus Luau code quality. |
 | `Deepin: Networking` | Focus remotes and replication. |
 | `Deepin: Security` | Focus anti-exploit and authority. |
 | `Deepin: Data` | Focus persistence and transactions. |
 | `Deepin: Performance` | Focus `references/Performance.md`. |
 | `Deepin: Gameplay` | Focus game systems. |
-| `Deepin: UIUX` | Focus UI and client UX. |
+| `Deepin: UIUX` | Focus `references/UIUX.md`. |
 | `Deepin: Reviewer` | Focus review and production readiness. |
 | `Deepin: Framework` | Focus framework only when support is enabled. |
 
@@ -48,13 +48,13 @@
 | Command | Read |
 |---|---|
 | `Deepin: Luau` | `EngineerDeepin/Specialists/Luau.md` |
-| `Deepin: Architecture` | `EngineerDeepin/Specialists/Architecture.md` |
+| `Deepin: Architecture` | `references/Architecture.md` |
 | `Deepin: Networking` | `EngineerDeepin/Specialists/Networking.md` |
 | `Deepin: Security` | `EngineerDeepin/Specialists/Security.md` |
 | `Deepin: Performance` | `references/Performance.md` |
 | `Deepin: Data` | `EngineerDeepin/Specialists/Data.md` |
 | `Deepin: Gameplay` | `EngineerDeepin/Specialists/Gameplay.md` |
-| `Deepin: UIUX` | `EngineerDeepin/Specialists/UIUX.md` |
+| `Deepin: UIUX` | `references/UIUX.md` |
 | `Deepin: Framework` | `EngineerDeepin/Specialists/Framework.md` only when enabled |
 | `Deepin: Reviewer` | `EngineerDeepin/Specialists/Reviewer.md` |
 
@@ -85,7 +85,7 @@
 
 | Command | Action |
 |---|---|
-| `!read-architecture` | Read architecture reference. |
+| `!read-architecture` | Read `references/Architecture.md`. |
 | `!read-networking` | Read networking reference. |
 | `!read-security` | Read security reference. |
 | `!read-data` | Read data reference. |
@@ -97,7 +97,7 @@
 | `!read-modernapi` | Read modern Roblox reference. |
 | `!read-qa` | Read testing QA reference. |
 | `!read-liveops` | Read game design LiveOps reference. |
-| `!read-uiux` | Read UIUX reference. |
+| `!read-uiux` | Read `references/UIUX.md`. |
 | `!read-luau` | Read Luau patterns reference. |
 | `!read-systems` | Read system blueprint reference. |
 | `!read-implementation-patterns` | Read concrete Deepin code patterns. |

@@ -1,12 +1,10 @@
 # Performance
 
 ## Purpose
-
 - Use for CPU, memory, rendering, UI, VFX, networking, mobile, gameplay loops, cleanup, and scale audits.
 - This file unifies the Basic, Deepin, and specialist performance guidance.
 
 ## Core Budget
-
 - Server target: 60Hz.
 - Client target: 60fps.
 - Frame budget: 16.6ms.
@@ -14,7 +12,6 @@
 - Luau is single-threaded per VM.
 
 ## Priority
-
 1. Measure the bottleneck class.
 2. Fix leaks.
 3. Reduce unbounded work.
@@ -23,7 +20,6 @@
 6. Keep code maintainable.
 
 ## Profiling
-
 - Use MicroProfiler for CPU spikes.
 - Use Script Performance for per-script cost.
 - Use memory stats for leak checks.
@@ -36,7 +32,6 @@ debug.profileend()
 ```
 
 ## Server Rules
-
 - Avoid excessive Heartbeat.
 - Avoid polling when events work.
 - Cache services and repeated instance paths.
@@ -48,7 +43,6 @@ debug.profileend()
 - Do not fire remotes every frame.
 
 ## Client Rules
-
 - Mobile is first-class.
 - Avoid hardcoded UI.
 - Reduce visible part count.
@@ -57,7 +51,6 @@ debug.profileend()
 - Keep UI, camera, and local effects client-side.
 
 ## Main Risks
-
 - Heartbeat loops with heavy work.
 - Connection leaks.
 - Instance polling.
@@ -70,7 +63,6 @@ debug.profileend()
 - Recursive `require` cycles.
 
 ## Safer Patterns
-
 ```lua
 local conn
 conn = RunService.Heartbeat:Connect(function()
@@ -79,7 +71,6 @@ conn = RunService.Heartbeat:Connect(function()
 	end
 end)
 ```
-
 ```lua
 local acc = 0
 RunService.Heartbeat:Connect(function(dt)
@@ -91,7 +82,6 @@ RunService.Heartbeat:Connect(function(dt)
 	updateAll()
 end)
 ```
-
 ```lua
 local hitBox = model:FindFirstChild("HitBox")
 RunService.Heartbeat:Connect(function()
@@ -100,7 +90,6 @@ RunService.Heartbeat:Connect(function()
 	end
 end)
 ```
-
 ```lua
 local scratch = {}
 local function getActiveEnemies()
@@ -113,7 +102,6 @@ local function getActiveEnemies()
 	return scratch
 end
 ```
-
 ```lua
 local part = workspace:WaitForChild("Part", 5)
 if not part then
@@ -122,7 +110,6 @@ end
 ```
 
 ## Gameplay And Networking
-
 - Server owns damage, rewards, inventory, rank, currency, and cooldown.
 - Client owns camera, input, local animation, visual feedback, and UI.
 - Validate distance for touch, pickup, trade, combat, carry, and interact systems.
@@ -147,7 +134,6 @@ end)
 ```
 
 ### Remote Names
-
 - `System_Action_RE` for `RemoteEvent`.
 - `System_Action_RF` for `RemoteFunction`.
 - `System_Action_BE` for `BindableEvent`.
@@ -155,7 +141,6 @@ end)
 - Prefer one typed action remote over many small remotes when safe.
 
 ### Remote Validation
-
 - Validate player identity.
 - Validate argument types.
 - Validate ownership.
@@ -164,7 +149,6 @@ end)
 - Never accept currency, inventory, damage, or rank from client as truth.
 
 ## Rendering
-
 - Reduce part count.
 - Reduce shadow use.
 - Use `Automatic` or `Performance` on noncritical meshes.
@@ -179,7 +163,6 @@ end)
 - LOD must not change server-owned gameplay outcomes.
 
 ## VFX
-
 - Keep emitters bounded.
 - Keep particle textures small.
 - Pool frequent VFX.
@@ -190,7 +173,6 @@ end)
 - Reduce effects on low-end devices.
 
 ## Architecture
-
 - Cache `GetService` results at module top.
 - Prefer one heartbeat dispatcher per system.
 - Pool frequently spawned objects.
@@ -202,10 +184,8 @@ end)
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 ```
-
 ```lua
 local pool = {}
-
 local function acquire(template)
 	local obj = table.remove(pool)
 	if not obj then
@@ -217,7 +197,6 @@ end
 ```
 
 ## Deep Costs
-
 - `task.spawn` still needs rate control.
 - Parallel Luau only helps for heavy work.
 - Constraints add physics cost.
@@ -228,7 +207,6 @@ end
 - BindableEvent is not ideal for internal module flow.
 
 ## Memory
-
 - Watch LuaHeap growth.
 - Clear player caches on leave.
 - Disconnect character and player signals.
@@ -238,7 +216,6 @@ end
 - Use `table.concat` for strings.
 
 ## Fast Rules
-
 - Use `task.wait()`, not `wait()`.
 - Use numeric loops for arrays.
 - Use `PivotTo` for model moves.
@@ -247,7 +224,6 @@ end
 - Keep optimization measurable.
 
 ## Output Rule
-
 - Report the bottleneck first.
 - Name the hot path.
 - Give the smallest safe fix.
